@@ -90,6 +90,17 @@
     
     
     <entry>
+      <title>books</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -101,31 +112,20 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>anime</title>
       <link href="/anime/index.html"/>
       <url>/anime/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>dustbin</title>
-      <link href="/dustbin/index.html"/>
-      <url>/dustbin/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>books</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -146,17 +146,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/font.css"/>
-      <url>/css/font.css</url>
-      
-        <content type="html"><![CDATA[@font-face {  font-family: "iconfont"; /* Project id 3965810 */  /* Color fonts */  src:        url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.woff2?t=1679728102745') format('woff2'),       url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.woff?t=1679728102745') format('woff'),       url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.ttf?t=1679728102745') format('truetype');}.iconfont {  font-family: "iconfont" !important;  font-size: 18px;  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}.icon-youxiang:before {  content: "\e60c";}.icon-leetcode:before {  content: "\e60d";}.icon-bilibili:before {  content: "\e606";}.icon-wenzhang-copy:before {  content: "\e643";}.icon-bofangqi-bofangxiaodianshi:before {  content: "\e6ab";}.icon-caihong:before {  content: "\e718";}.icon-guanli:before {  content: "\e600";}.icon-qq:before {  content: "\e66a";}.icon-shu:before {  content: "\e634";}.icon-weixin:before {  content: "\e62c";}.icon-aixin:before {  content: "\e613";}.icon-csdn:before {  content: "\e638";}.icon-pengyouquan:before {  content: "\e615";}.icon-dianying:before {  content: "\e8c4";}.icon-zonglanxiushi:before {  content: "\e609";}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/runtime.css"/>
       <url>/css/runtime.css</url>
       
@@ -167,11 +156,44 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/font.css"/>
+      <url>/css/font.css</url>
+      
+        <content type="html"><![CDATA[@font-face {  font-family: "iconfont"; /* Project id 3965810 */  /* Color fonts */  src:        url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.woff2?t=1679728102745') format('woff2'),       url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.woff?t=1679728102745') format('woff'),       url('//at.alicdn.com/t/c/font_3965810_huopcci4t9n.ttf?t=1679728102745') format('truetype');}.iconfont {  font-family: "iconfont" !important;  font-size: 18px;  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}.icon-youxiang:before {  content: "\e60c";}.icon-leetcode:before {  content: "\e60d";}.icon-bilibili:before {  content: "\e606";}.icon-wenzhang-copy:before {  content: "\e643";}.icon-bofangqi-bofangxiaodianshi:before {  content: "\e6ab";}.icon-caihong:before {  content: "\e718";}.icon-guanli:before {  content: "\e600";}.icon-qq:before {  content: "\e66a";}.icon-shu:before {  content: "\e634";}.icon-weixin:before {  content: "\e62c";}.icon-aixin:before {  content: "\e613";}.icon-csdn:before {  content: "\e638";}.icon-pengyouquan:before {  content: "\e615";}.icon-dianying:before {  content: "\e8c4";}.icon-zonglanxiushi:before {  content: "\e609";}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>dustbin</title>
+      <link href="/dustbin/index.html"/>
+      <url>/dustbin/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/card_weibo.js"/>
+      <url>/js/card_weibo.js</url>
+      
+        <content type="html"><![CDATA[fetch('https://weibo.eurkon.com/api').then(data => data.json()).then(data => {  let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'  html += '<div class="weibo-list">'  let hotness = {    '爆': 'weibo-boom',    '热': 'weibo-hot',    '沸': 'weibo-boil',    '新': 'weibo-new',    '荐': 'weibo-recommend',    '音': 'weibo-jyzy',    '影': 'weibo-jyzy',    '剧': 'weibo-jyzy',    '综': 'weibo-jyzy'  }  for (let item of data) {    html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'      + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer">' + item.title + '</a></span>'      + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'  }  html += '</div>'  document.getElementById('weibo-container').innerHTML = html}).catch(function (error) {  console.log(error);});]]></content>
       
     </entry>
     
@@ -200,6 +222,17 @@
     
     
     <entry>
+      <title>movies</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
@@ -211,9 +244,9 @@
     
     
     <entry>
-      <title>movies</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -233,31 +266,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>overview</title>
       <link href="/overview/index.html"/>
       <url>/overview/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
