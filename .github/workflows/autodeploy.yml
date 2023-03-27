@@ -73,7 +73,7 @@ jobs:
         run: |
           hexo clean
           hexo generate
-          gulp
+          # gulp
 
       - name: 部署
         run: |
