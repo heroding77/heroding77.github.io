@@ -357,3 +357,23 @@ tag_plugins:
 aplayer:
   meting: true
   asset_inject: false
+
+#hexo-neat 优化提速插件（去掉HTML、css、js的blank字符）
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+    - '**/*.md'
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/**/instantpage.js'
+    - '**/matery.js'
