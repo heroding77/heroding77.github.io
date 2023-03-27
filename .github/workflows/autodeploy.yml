@@ -133,3 +133,10 @@ jobs:
         git add .
         git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
         git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/${{ secrets.GITHUBUSERNAME }}.github.io.git" main:main
+
+    # Install pandoc for mathjax (Optional)
+    - name: Install pandoc
+      run: |
+        cd /tmp
+        wget -c https://github.com/jgm/pandoc/releases/download/2.14.0.3/pandoc-2.14.0.3-1-amd64.deb
+        sudo dpkg -i pandoc-3.1.1--amd64.deb
