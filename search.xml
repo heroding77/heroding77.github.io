@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>开源作业总结与反思</title>
+      <link href="/2023/03/28/%E5%BC%80%E6%BA%90%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93%E4%B8%8E%E5%8F%8D%E6%80%9D/"/>
+      <url>/2023/03/28/%E5%BC%80%E6%BA%90%E4%BD%9C%E4%B8%9A%E6%80%BB%E7%BB%93%E4%B8%8E%E5%8F%8D%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="关于本站">关于本站</h2><p>如果没有开源作业的任务，我可能永远都不会上线自己的个人博客，一是搭建个人网站费时费力，二是根本不知道博客上应该放些什么，于是便一直拖延至今。关于第一个问题，github page和Hexo+butterfly彻底颠覆了我的观念，原来真的只要三行代码就可以搭建好个人博客，原来开源框架在插件的支持下，只需要一个npm的插件安装，和一行yml代码的部署，最多加上一些css样式的调整修改，一个充满动感和美感主页就制作完成了。对于第二个问题，当被渲染过的网站呈现在我的面前的时候，我就找到了答案，这就是我自己的小屋，我自己的树洞，所以无论是学习上的理解还是生活中的感悟，我都一股脑放到这里，如果有喜欢的朋友，也非常欢迎前来交流，目前还没有上线朋友圈和评论功能，但也在进行中了~ ## 关于个性化 在设计之初，我就希望自己的博客是以一种展现博主个性的形式呈现在用户面前，所以首先从背景和图片的选取上就带来了很大的冲击。可以看到本站是以二次元元素为主，所有的图片都是我喜欢的动漫的角色图片，细心的朋友可能看到目录有一栏为诗和远方，包括番剧，电影，音乐，书籍，其中音乐选项链接到我的网易云歌单，希望能通过本站寻觅到有相同音乐热爱的伙伴。大部分图标都有动态效果，github follow处还设计一款滑翔的飞机，如果你切换夜间模式，还能看到日月变化的图片，此外背景的荧光特效，夜景的流星特效，以及可爱的小鼠标，这些小细节都希望读者感受到我的一些想法。最后，网址icon也是我特别准备的，james的骑士队球衣，这也代表了我日常的一大爱好。 ## 关于布局 布局上就是经典的博客布局，目录置顶居中，主页中心位置以图片形式呈现本站内容的分类和标签，以及部分文章标题，侧边栏包括对站长的介绍，联系方式，网站资讯等，这里特别装载了电子时钟和微博热搜，也算是让本站的内容更为丰富吧。文章布局的侧边栏进行了简化，只留下了站长信息和公告，多了一个文章目录，希望这样能让页面更加简洁。 ## 关于技术 网站的整体实现基于Hexo+butterfly，部署部分通过github action实现了自动部署，压缩方法采用了gulp，但由于网站内容并不多所以没有明显的性能提升。为了减少静态资源的负担，将图床部署到github上，采用cdn加速，防止图片等资源加载不进来的问题。 ## 关于开源 “如果我能看得更远一点的话，是因为我站在巨人的肩膀上。” 特别感谢wzm、Fomalhaut、akilar、唐志远、安知鱼等大佬的开源，让我有了学习（<del>白嫖</del>）的机会，正是这些大佬伟大的创造精神和开源精神，才有了我这一小小但很温馨的网站，他们在butterfly中的各种魔改，成就了一段段佳话，为万千站长受用。此外，本站所用的字体为开源字体得意黑，拥有着大弧线倾斜弯钩造型，这是著名设计师六个蛋老师<a href="https://space.bilibili.com/38053181">oooooohmygosh</a>的开源作品，虽然最适合在广告标题中使用，但是应用在本站上别具风味。</p><h2 id="友链">友链</h2><blockquote><p>https://tamiflu233.com/ https://tzy1997.com/ https://www.fomal.cc/ https://anzhiy.cn/ https://akilar.top/</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开源 </tag>
+            
+            <tag> 碎碎念 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自定义排序算法</title>
       <link href="/2023/03/27/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8F/"/>
       <url>/2023/03/27/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8F/</url>
@@ -115,17 +142,6 @@
     
     
     <entry>
-      <title>anime</title>
-      <link href="/anime/index.html"/>
-      <url>/anime/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -137,9 +153,9 @@
     
     
     <entry>
-      <title>books</title>
-      <link href="/books/index.html"/>
-      <url>/books/index.html</url>
+      <title>anime</title>
+      <link href="/anime/index.html"/>
+      <url>/anime/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -148,9 +164,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>books</title>
+      <link href="/books/index.html"/>
+      <url>/books/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -181,11 +197,11 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/js/cursor.js"/>
+      <url>/js/cursor.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url(https://cdn.jsdelivr.net/npm/kang-static/Hexo/img/default.cur), auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -193,10 +209,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/js/card_weibo.js"/>
+      <url>/js/card_weibo.js</url>
       
-        <content type="html"><![CDATA[setInterval(() => {    let create_time = Math.round(new Date('2023-03-21 00:00:00').getTime() / 1000); //在此行修改建站时间    let timestamp = Math.round((new Date().getTime()) / 1000);    let second = timestamp - create_time;    let time = new Array(0, 0, 0, 0, 0);      var nol = function(h){      return h>9?h:'0'+h;    }    if (second >= 365 * 24 * 3600) {      time[0] = parseInt(second / (365 * 24 * 3600));      second %= 365 * 24 * 3600;    }    if (second >= 24 * 3600) {      time[1] = parseInt(second / (24 * 3600));      second %= 24 * 3600;    }    if (second >= 3600) {      time[2] = nol(parseInt(second / 3600));      second %= 3600;    }    if (second >= 60) {      time[3] = nol(parseInt(second / 60));      second %= 60;    }    if (second > 0) {      time[4] = nol(second);    }    if ((Number(time[2])<22) && (Number(time[2])>7)){      currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/糖果屋-营业中-6adea8?style=social&logo=cakephp' title='距离百年老店也就差不到一百年~'><div id='runtime'>" + time[0] + ' YEAR  ' + time[1] + ' DAYS  ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';    }    else{      currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/糖果屋-打烊了-6adea8?style=social&logo=coffeescript' title='这个点了应该去睡觉啦，熬夜对身体不好哦'><div id='runtime'>" + time[0] + ' YEAR  ' + time[1] + ' DAYS  ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';    }    document.getElementById("workboard").innerHTML = currentTimeHtml;  }, 1000);]]></content>
+        <content type="html"><![CDATA[fetch('https://weibo.eurkon.com/api').then(data => data.json()).then(data => {  let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'  html += '<div class="weibo-list">'  let hotness = {    '爆': 'weibo-boom',    '热': 'weibo-hot',    '沸': 'weibo-boil',    '新': 'weibo-new',    '荐': 'weibo-recommend',    '音': 'weibo-jyzy',    '影': 'weibo-jyzy',    '剧': 'weibo-jyzy',    '综': 'weibo-jyzy'  }  for (let item of data) {    html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'      + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer">' + item.title + '</a></span>'      + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'  }  html += '</div>'  document.getElementById('weibo-container').innerHTML = html}).catch(function (error) {  console.log(error);});]]></content>
       
     </entry>
     
@@ -208,6 +224,17 @@
       <url>/js/sun_moon.js</url>
       
         <content type="html"><![CDATA[function switchNightMode() {    document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),        setTimeout(function () {            document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),                setTimeout(function () {                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';                    setTimeout(function () {                        document.getElementsByClassName('Cuteen_DarkSky')[0].remove();                    }, 1e3);                }, 2e3)        })    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'    if (nowMode === 'light') {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "1";        document.getElementById("moon").style.opacity = "0";        setTimeout(function () {            document.getElementById("sun").style.opacity = "0";            document.getElementById("moon").style.opacity = "1";        }, 1000);        activateDarkMode()        saveToLocal.set('theme', 'dark', 2)        // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')        // 延时弹窗提醒        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "关灯啦🌙",                        message: "当前已成功切换至夜间模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    } else {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "0";        document.getElementById("moon").style.opacity = "1";        setTimeout(function () {            document.getElementById("sun").style.opacity = "1";            document.getElementById("moon").style.opacity = "0";        }, 1000);                activateLightMode()        saveToLocal.set('theme', 'light', 2)        document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "开灯啦🌞",                        message: "当前已成功切换至白天模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    }    // handle some cases    typeof utterancesTheme === 'function' && utterancesTheme()    typeof FB === 'object' && window.loadFBComment()    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -226,32 +253,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[setInterval(() => {    let create_time = Math.round(new Date('2023-03-21 00:00:00').getTime() / 1000); //在此行修改建站时间    let timestamp = Math.round((new Date().getTime()) / 1000);    let second = timestamp - create_time;    let time = new Array(0, 0, 0, 0, 0);      var nol = function(h){      return h>9?h:'0'+h;    }    if (second >= 365 * 24 * 3600) {      time[0] = parseInt(second / (365 * 24 * 3600));      second %= 365 * 24 * 3600;    }    if (second >= 24 * 3600) {      time[1] = parseInt(second / (24 * 3600));      second %= 24 * 3600;    }    if (second >= 3600) {      time[2] = nol(parseInt(second / 3600));      second %= 3600;    }    if (second >= 60) {      time[3] = nol(parseInt(second / 60));      second %= 60;    }    if (second > 0) {      time[4] = nol(second);    }    if ((Number(time[2])<22) && (Number(time[2])>7)){      currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/糖果屋-营业中-6adea8?style=social&logo=cakephp' title='距离百年老店也就差不到一百年~'><div id='runtime'>" + time[0] + ' YEAR  ' + time[1] + ' DAYS  ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';    }    else{      currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/糖果屋-打烊了-6adea8?style=social&logo=coffeescript' title='这个点了应该去睡觉啦，熬夜对身体不好哦'><div id='runtime'>" + time[0] + ' YEAR  ' + time[1] + ' DAYS  ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';    }    document.getElementById("workboard").innerHTML = currentTimeHtml;  }, 1000);]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>movies</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/cursor.js"/>
-      <url>/js/cursor.js</url>
-      
-        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url(https://cdn.jsdelivr.net/npm/kang-static/Hexo/img/default.cur), auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -280,31 +296,31 @@
     
     
     <entry>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
+      
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的歌单</title>
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="我的歌单">我的歌单</h1><hr />    <div id="aplayer-PscGfMFp" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="6599523769" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
+        <content type="html"><![CDATA[<h1 id="我的歌单">我的歌单</h1><hr />    <div id="aplayer-EgfIBFaA" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="6599523769" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/js/card_weibo.js"/>
-      <url>/js/card_weibo.js</url>
-      
-        <content type="html"><![CDATA[fetch('https://weibo.eurkon.com/api').then(data => data.json()).then(data => {  let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'  html += '<div class="weibo-list">'  let hotness = {    '爆': 'weibo-boom',    '热': 'weibo-hot',    '沸': 'weibo-boil',    '新': 'weibo-new',    '荐': 'weibo-recommend',    '音': 'weibo-jyzy',    '影': 'weibo-jyzy',    '剧': 'weibo-jyzy',    '综': 'weibo-jyzy'  }  for (let item of data) {    html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'      + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer">' + item.title + '</a></span>'      + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'  }  html += '</div>'  document.getElementById('weibo-container').innerHTML = html}).catch(function (error) {  console.log(error);});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>overview</title>
-      <link href="/overview/index.html"/>
-      <url>/overview/index.html</url>
+      <title>movies</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -316,6 +332,17 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>overview</title>
+      <link href="/overview/index.html"/>
+      <url>/overview/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
