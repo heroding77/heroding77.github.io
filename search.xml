@@ -115,6 +115,17 @@
     
     
     <entry>
+      <title>anime</title>
+      <link href="/anime/index.html"/>
+      <url>/anime/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -131,6 +142,17 @@
       <url>/books/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
+      
+        <content type="html"><![CDATA[/*电子钟字体*/@font-face {    font-family: 'UnidreamLED';    src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");    font-display: swap;  }  div#runtime {    width: 180px;    margin: auto;    color: #fff;    padding-inline: 5px;    border-radius: 10px;    background-color: rgba(0,0,0,0.7);    font-family: 'UnidreamLED';  }  [data-theme="dark"] div#runtime {    color: #28b4c8;    box-shadow: 0 0 5px rgba(28,69,218,0.71);    animation: flashlight 1s linear infinite alternate;  }  /*悬停显示徽标提示语*/  a.github-badge:hover:before {    position: fixed;    width: fit-content;    margin: auto;    left: 0;    right: 0;    top: 10%;    border-radius: 10px;    text-align: center;    z-index: 100;    content: attr(data-title);    font-size: 20px;    color: #fff;    padding: 10px;    background-color: var(--text-bg-hover);  }  [data-theme=dark] a.github-badge:hover:before {    background-color: rgba(18,18,18,0.8);  }  @-moz-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @-webkit-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @-o-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }]]></content>
       
     </entry>
     
@@ -159,22 +181,11 @@
     
     
     <entry>
-      <title>anime</title>
-      <link href="/anime/index.html"/>
-      <url>/anime/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
+      <link href="/js/card_weibo.js"/>
+      <url>/js/card_weibo.js</url>
       
-        <content type="html"><![CDATA[/*电子钟字体*/@font-face {    font-family: 'UnidreamLED';    src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");    font-display: swap;  }  div#runtime {    width: 180px;    margin: auto;    color: #fff;    padding-inline: 5px;    border-radius: 10px;    background-color: rgba(0,0,0,0.7);    font-family: 'UnidreamLED';  }  [data-theme="dark"] div#runtime {    color: #28b4c8;    box-shadow: 0 0 5px rgba(28,69,218,0.71);    animation: flashlight 1s linear infinite alternate;  }  /*悬停显示徽标提示语*/  a.github-badge:hover:before {    position: fixed;    width: fit-content;    margin: auto;    left: 0;    right: 0;    top: 10%;    border-radius: 10px;    text-align: center;    z-index: 100;    content: attr(data-title);    font-size: 20px;    color: #fff;    padding: 10px;    background-color: var(--text-bg-hover);  }  [data-theme=dark] a.github-badge:hover:before {    background-color: rgba(18,18,18,0.8);  }  @-moz-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @-webkit-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @-o-keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }  @keyframes flashlight {    from {      box-shadow: 0 0 5px #1478d2;    }    to {      box-shadow: 0 0 2px #1478d2;    }  }]]></content>
+        <content type="html"><![CDATA[fetch('https://weibo.eurkon.com/api').then(data => data.json()).then(data => {  let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'  html += '<div class="weibo-list">'  let hotness = {    '爆': 'weibo-boom',    '热': 'weibo-hot',    '沸': 'weibo-boil',    '新': 'weibo-new',    '荐': 'weibo-recommend',    '音': 'weibo-jyzy',    '影': 'weibo-jyzy',    '剧': 'weibo-jyzy',    '综': 'weibo-jyzy'  }  for (let item of data) {    html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'      + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer">' + item.title + '</a></span>'      + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'  }  html += '</div>'  document.getElementById('weibo-container').innerHTML = html}).catch(function (error) {  console.log(error);});]]></content>
       
     </entry>
     
@@ -193,17 +204,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/card_weibo.js"/>
-      <url>/js/card_weibo.js</url>
-      
-        <content type="html"><![CDATA[fetch('https://weibo.eurkon.com/api').then(data => data.json()).then(data => {  let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'  html += '<div class="weibo-list">'  let hotness = {    '爆': 'weibo-boom',    '热': 'weibo-hot',    '沸': 'weibo-boil',    '新': 'weibo-new',    '荐': 'weibo-recommend',    '音': 'weibo-jyzy',    '影': 'weibo-jyzy',    '剧': 'weibo-jyzy',    '综': 'weibo-jyzy'  }  for (let item of data) {    html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'      + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer">' + item.title + '</a></span>'      + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'  }  html += '</div>'  document.getElementById('weibo-container').innerHTML = html}).catch(function (error) {  console.log(error);});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/runtime.js"/>
       <url>/js/runtime.js</url>
       
@@ -215,10 +215,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/sun_moon.js"/>
-      <url>/js/sun_moon.js</url>
+      <link href="/js/sakura.js"/>
+      <url>/js/sakura.js</url>
       
-        <content type="html"><![CDATA[function switchNightMode() {    document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),        setTimeout(function () {            document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),                setTimeout(function () {                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';                    setTimeout(function () {                        document.getElementsByClassName('Cuteen_DarkSky')[0].remove();                    }, 1e3);                }, 2e3)        })    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'    if (nowMode === 'light') {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "1";        document.getElementById("moon").style.opacity = "0";        setTimeout(function () {            document.getElementById("sun").style.opacity = "0";            document.getElementById("moon").style.opacity = "1";        }, 1000);        activateDarkMode()        saveToLocal.set('theme', 'dark', 2)        // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')        // 延时弹窗提醒        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "关灯啦🌙",                        message: "当前已成功切换至夜间模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    } else {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "0";        document.getElementById("moon").style.opacity = "1";        setTimeout(function () {            document.getElementById("sun").style.opacity = "1";            document.getElementById("moon").style.opacity = "0";        }, 1000);                activateLightMode()        saveToLocal.set('theme', 'light', 2)        document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "开灯啦🌞",                        message: "当前已成功切换至白天模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    }    // handle some cases    typeof utterancesTheme === 'function' && utterancesTheme()    typeof FB === 'object' && window.loadFBComment()    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)}]]></content>
+        <content type="html"><![CDATA[var stop, staticx;var img = new Image();// 将引入的图片文件替换为你想要的即可img.src = "https://img.cdn.nesxc.com/upload/wordpress/202202251325420webp";function Sakura(x, y, s, r, fn) {    this.x = x;    this.y = y;    this.s = s;    this.r = r;    this.fn = fn}Sakura.prototype.draw = function (cxt) {    cxt.save();    var xc = 20 * this.s / 2;    cxt.translate(this.x, this.y);    cxt.rotate(this.r);    cxt.drawImage(img, 0, 0, 20 * this.s, 20 * this.s);    cxt.restore()};Sakura.prototype.update = function () {    this.x = this.fn.x(this.x, this.y);    this.y = this.fn.y(this.y, this.y);    this.r = this.fn.r(this.r);    if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) {        this.r = getRandom("fnr");        if (Math.random() > 0.4) {            this.x = getRandom("x");            this.y = 0;            this.s = getRandom("s");            this.r = getRandom("r")        } else {            this.x = window.innerWidth;            this.y = getRandom("y");            this.s = getRandom("s");            this.r = getRandom("r")        }    }};SakuraList = function () {    this.list = []};SakuraList.prototype.push = function (sakura) {    this.list.push(sakura)};SakuraList.prototype.update = function () {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].update()    }};SakuraList.prototype.draw = function (cxt) {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].draw(cxt)    }};SakuraList.prototype.get = function (i) {    return this.list[i]};SakuraList.prototype.size = function () {    return this.list.length};function getRandom(option) {    var ret, random;    switch (option) {        case "x":            ret = Math.random() * window.innerWidth;            break;        case "y":            ret = Math.random() * window.innerHeight;            break;        case "s":            ret = Math.random();            break;        case "r":            ret = Math.random() * 4;            break;        case "fnx":            random = -0.5 + Math.random() * 1;            ret = function (x, y) {                return x + 0.5 * random - 1.7            };            break;        case "fny":            random = 1.5 + Math.random() * 0.7;            ret = function (x, y) {                return y + random            };            break;        case "fnr":            random = Math.random() * 0.03;            ret = function (r) {                return r + random            };            break    }    return ret}function startSakura() {    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;    var canvas = document.createElement("canvas"),        cxt;    staticx = true;    canvas.height = window.innerHeight;    canvas.width = window.innerWidth;    canvas.setAttribute("style", "position: fixed;left: 0;top: 0;pointer-events: none;");    canvas.setAttribute("id", "canvas_sakura");    document.getElementsByTagName("body")[0].appendChild(canvas);    cxt = canvas.getContext("2d");    var sakuraList = new SakuraList();    for (var i = 0; i < 50; i++) {        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;        randomX = getRandom("x");        randomY = getRandom("y");        randomR = getRandom("r");        randomS = getRandom("s");        randomFnx = getRandom("fnx");        randomFny = getRandom("fny");        randomFnR = getRandom("fnr");        sakura = new Sakura(randomX, randomY, randomS, randomR, {            x: randomFnx,            y: randomFny,            r: randomFnR        });        sakura.draw(cxt);        sakuraList.push(sakura)    }    stop = requestAnimationFrame(function () {        cxt.clearRect(0, 0, canvas.width, canvas.height);        sakuraList.update();        sakuraList.draw(cxt);        stop = requestAnimationFrame(arguments.callee)    })}window.onresize = function () {    var canvasSnow = document.getElementById("canvas_snow")};img.onload = function () {    startSakura()};function stopp() {    if (staticx) {        var child = document.getElementById("canvas_sakura");        child.parentNode.removeChild(child);        window.cancelAnimationFrame(stop);        staticx = false    } else {        startSakura()    }};]]></content>
       
     </entry>
     
@@ -226,10 +226,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/sakura.js"/>
-      <url>/js/sakura.js</url>
+      <link href="/js/sun_moon.js"/>
+      <url>/js/sun_moon.js</url>
       
-        <content type="html"><![CDATA[var stop, staticx;var img = new Image();// 将引入的图片文件替换为你想要的即可img.src = "https://img.cdn.nesxc.com/upload/wordpress/202202251325420webp";function Sakura(x, y, s, r, fn) {    this.x = x;    this.y = y;    this.s = s;    this.r = r;    this.fn = fn}Sakura.prototype.draw = function (cxt) {    cxt.save();    var xc = 20 * this.s / 2;    cxt.translate(this.x, this.y);    cxt.rotate(this.r);    cxt.drawImage(img, 0, 0, 20 * this.s, 20 * this.s);    cxt.restore()};Sakura.prototype.update = function () {    this.x = this.fn.x(this.x, this.y);    this.y = this.fn.y(this.y, this.y);    this.r = this.fn.r(this.r);    if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) {        this.r = getRandom("fnr");        if (Math.random() > 0.4) {            this.x = getRandom("x");            this.y = 0;            this.s = getRandom("s");            this.r = getRandom("r")        } else {            this.x = window.innerWidth;            this.y = getRandom("y");            this.s = getRandom("s");            this.r = getRandom("r")        }    }};SakuraList = function () {    this.list = []};SakuraList.prototype.push = function (sakura) {    this.list.push(sakura)};SakuraList.prototype.update = function () {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].update()    }};SakuraList.prototype.draw = function (cxt) {    for (var i = 0, len = this.list.length; i < len; i++) {        this.list[i].draw(cxt)    }};SakuraList.prototype.get = function (i) {    return this.list[i]};SakuraList.prototype.size = function () {    return this.list.length};function getRandom(option) {    var ret, random;    switch (option) {        case "x":            ret = Math.random() * window.innerWidth;            break;        case "y":            ret = Math.random() * window.innerHeight;            break;        case "s":            ret = Math.random();            break;        case "r":            ret = Math.random() * 4;            break;        case "fnx":            random = -0.5 + Math.random() * 1;            ret = function (x, y) {                return x + 0.5 * random - 1.7            };            break;        case "fny":            random = 1.5 + Math.random() * 0.7;            ret = function (x, y) {                return y + random            };            break;        case "fnr":            random = Math.random() * 0.03;            ret = function (r) {                return r + random            };            break    }    return ret}function startSakura() {    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;    var canvas = document.createElement("canvas"),        cxt;    staticx = true;    canvas.height = window.innerHeight;    canvas.width = window.innerWidth;    canvas.setAttribute("style", "position: fixed;left: 0;top: 0;pointer-events: none;");    canvas.setAttribute("id", "canvas_sakura");    document.getElementsByTagName("body")[0].appendChild(canvas);    cxt = canvas.getContext("2d");    var sakuraList = new SakuraList();    for (var i = 0; i < 50; i++) {        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;        randomX = getRandom("x");        randomY = getRandom("y");        randomR = getRandom("r");        randomS = getRandom("s");        randomFnx = getRandom("fnx");        randomFny = getRandom("fny");        randomFnR = getRandom("fnr");        sakura = new Sakura(randomX, randomY, randomS, randomR, {            x: randomFnx,            y: randomFny,            r: randomFnR        });        sakura.draw(cxt);        sakuraList.push(sakura)    }    stop = requestAnimationFrame(function () {        cxt.clearRect(0, 0, canvas.width, canvas.height);        sakuraList.update();        sakuraList.draw(cxt);        stop = requestAnimationFrame(arguments.callee)    })}window.onresize = function () {    var canvasSnow = document.getElementById("canvas_snow")};img.onload = function () {    startSakura()};function stopp() {    if (staticx) {        var child = document.getElementById("canvas_sakura");        child.parentNode.removeChild(child);        window.cancelAnimationFrame(stop);        staticx = false    } else {        startSakura()    }};]]></content>
+        <content type="html"><![CDATA[function switchNightMode() {    document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),        setTimeout(function () {            document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),                setTimeout(function () {                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';                    document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';                    setTimeout(function () {                        document.getElementsByClassName('Cuteen_DarkSky')[0].remove();                    }, 1e3);                }, 2e3)        })    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'    if (nowMode === 'light') {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "1";        document.getElementById("moon").style.opacity = "0";        setTimeout(function () {            document.getElementById("sun").style.opacity = "0";            document.getElementById("moon").style.opacity = "1";        }, 1000);        activateDarkMode()        saveToLocal.set('theme', 'dark', 2)        // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')        // 延时弹窗提醒        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "关灯啦🌙",                        message: "当前已成功切换至夜间模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    } else {        // 先设置太阳月亮透明度        document.getElementById("sun").style.opacity = "0";        document.getElementById("moon").style.opacity = "1";        setTimeout(function () {            document.getElementById("sun").style.opacity = "1";            document.getElementById("moon").style.opacity = "0";        }, 1000);                activateLightMode()        saveToLocal.set('theme', 'light', 2)        document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')        setTimeout(() => {            new Vue({                data: function () {                    this.$notify({                        title: "开灯啦🌞",                        message: "当前已成功切换至白天模式！",                        position: 'top-left',                        offset: 50,                        showClose: true,                        type: "success",                        duration: 5000                    });                }            })        }, 2000)    }    // handle some cases    typeof utterancesTheme === 'function' && utterancesTheme()    typeof FB === 'object' && window.loadFBComment()    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)}]]></content>
       
     </entry>
     
@@ -258,6 +258,17 @@
     
     
     <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
@@ -280,22 +291,22 @@
     
     
     <entry>
-      <title>我的歌单</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="我的歌单">我的歌单</h1><hr />    <div id="aplayer-xDHNRSJU" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="6599523769" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>我的歌单</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="我的歌单">我的歌单</h1><hr />    <div id="aplayer-AHQrwXtk" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="6599523769" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
       
     </entry>
     
@@ -305,17 +316,6 @@
       <title>overview</title>
       <link href="/overview/index.html"/>
       <url>/overview/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
