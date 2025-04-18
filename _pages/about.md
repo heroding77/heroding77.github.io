@@ -80,6 +80,7 @@ My research interests include:
 
 # 🏆 Honors and Awards
 **Honors**
+- *2025.04* &emsp; Outstanding Graduate, East China Normal University
 - *2022.06* &emsp; Outstanding Graduate, Dalian University of Technology
 - *2018-21* &emsp; Outstanding Student, Dalian University of Technology
 
