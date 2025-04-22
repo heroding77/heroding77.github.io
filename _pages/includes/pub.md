@@ -1,13 +1,27 @@
 
 # 📝 Selected Publications  <a href='https://scholar.google.com/citations?user=N4NNsRMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/mid_training.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Breaking the Data Barrier – Building GUI Agents Through Task Generalization 🔥🔥](https://arxiv.org/pdf/2504.10127) <span style="color:red">[Preprint]</span> [![](https://img.shields.io/github/stars/hkust-nlp/GUIMid?style=social&label=Code+Stars)](https://github.com/hkust-nlp/GUIMid) \\
+Junlei Zhang\*, **Zichen Ding\***, Chang Ma, Zijie Chen, Qiushi Sun, Zhenzhong Lan, Junxian He.
+
+(\* means equal contributions)
+
+- Check code at [**Our Project**](https://github.com/hkust-nlp/GUIMid). 📽️
+- Provide valuable insights into cross-domain knowledge transfer for GUI agents. 🤖
+- Offer a practical approach to addressing data scarcity challenges in this emerging field. 💫
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/genesis.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis 🔥🔥](https://arxiv.org/abs/2412.19723) <span style="color:red">[Preprint]</span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Genesis?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Genesis) \\
 Qiushi Sun\*, Kanzhi Cheng\*, **Zichen Ding\***, Chuanyang Jin\*, Yian Wang, Fangzhi Xu, Zhenyu Wu, Chengyou Jia, Liheng Chen, Zhoumianze Liu, Ben Kao, Guohao Li, Junxian He, Yu Qiao, Zhiyong Wu.
-
-(\* means equal contributions)
 
 - Check demos at [**Our Website**](https://qiushisun.github.io/OS-Genesis-Home/). 🌐
 - Shift from task-driven to interaction-driven GUI data synthesis. 🤖
