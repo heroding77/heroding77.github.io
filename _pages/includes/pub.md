@@ -10,7 +10,7 @@ Junlei Zhang\*, **Zichen Ding\***, Chang Ma, Zijie Chen, Qiushi Sun, Zhenzhong L
 (\* means equal contributions)
 
 - Check code at [**Our Project**](https://github.com/hkust-nlp/GUIMid). 📽️
-- Provide valuable insights into cross-domain knowledge transfer for GUI agents. 🤖
+- Provide insights into cross-domain knowledge transfer for GUI agents. 🤖
 - Offer a practical approach to addressing data scarcity challenges in this emerging field. 💫
 
 </div>
