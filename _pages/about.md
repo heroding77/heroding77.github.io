@@ -48,6 +48,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
+        <li><em>2025.04</em>: 🤖🤖 We release <a href="https://github.com/hkust-nlp/GUIMid">GUIMid</a>, A new paradigm for training GUI agents!</li>
         <li><em>2025.03</em>: 🏖️🏖️ Will attend ICLR 2025! See you at Singapore! 🇸🇬</li>
         <li><em>2025.01</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2410.23218">OS-Atlas</a> is accepted to ICLR 2025 (Spotlight)! 🇸🇬</li>
         <li><em>2024.12</em>: 🤖🤖 We release <a href="https://qiushisun.github.io/OS-Genesis-Home/">OS-Genesis</a> and <a href="https://osatlas.github.io/">OS-Atlas</a> to advance GUI agents!</li>
