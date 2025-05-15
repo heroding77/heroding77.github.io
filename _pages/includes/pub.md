@@ -17,10 +17,10 @@ Junlei Zhang\*, **Zichen Ding\***, Chang Ma, Zijie Chen, Qiushi Sun, Zhenzhong L
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/genesis.png' alt="sym" width="98%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 Main Conference</div><img src='images/publications/genesis.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis 🔥🔥](https://arxiv.org/abs/2412.19723) <span style="color:red">[Preprint]</span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Genesis?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Genesis) \\
+[OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis 🔥🔥](https://arxiv.org/abs/2412.19723) <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Genesis?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Genesis) \\
 Qiushi Sun\*, Kanzhi Cheng\*, **Zichen Ding\***, Chuanyang Jin\*, Yian Wang, Fangzhi Xu, Zhenyu Wu, Chengyou Jia, Liheng Chen, Zhoumianze Liu, Ben Kao, Guohao Li, Junxian He, Yu Qiao, Zhiyong Wu.
 
 - Check demos at [**Our Website**](https://qiushisun.github.io/OS-Genesis-Home/). 🌐
@@ -30,7 +30,7 @@ Qiushi Sun\*, Kanzhi Cheng\*, **Zichen Ding\***, Chuanyang Jin\*, Yian Wang, Fan
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2024</div><img src='images/publications/SEA.png' alt="sym" width="98%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Findings of EMNLP 2024</div><img src='images/publications/SEA.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Automated Peer Reviewing in Paper SEA: Standardization, Evaluation, and Analysis](https://arxiv.org/abs/2407.12857) <span style="color:orange">[CCF-B]</span> [![](https://img.shields.io/github/stars/ecnu-sea/SEA?style=social&label=Code+Stars)](https://github.com/ecnu-sea/SEA) <a href='https://www.bilibili.com/video/BV1EFCZY3E5j/'><img src="https://img.shields.io/badge/Bilibili-SEA-blue?logo=bilibili&logoColor=white"></a> \\
@@ -41,9 +41,11 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 
 </div>
 </div>
-
 <!-- - `Preprint` [OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis](https://arxiv.org/abs/2412.19723), &nbsp;
 [![](https://img.shields.io/github/stars/OS-Copilot/OS-Genesis?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Genesis)<br> Qiushi Sun\*, Kanzhi Cheng\*, **Zichen Ding\***, Chuanyang Jin\*, Yian Wang, Fangzhi Xu, Zhenyu Wu, Chengyou Jia, Liheng Chen, Zhoumianze Liu, Ben Kao, Guohao Li, Junxian He, Yu Qiao, Zhiyong Wu. -->
+
+- `Findings of ACL 2025` [Let's Be Self-generated via Step by Step: A Curriculum Learning Approach to Automated Reasoning with Large Language Models](https://arxiv.org/pdf/2410.21728), <span style="color:red"></span> <br> Kangyang Luo, Zichen Ding, Zhenmin Weng, Lingfeng Qiao, Meng Zhao, Xiang Li, Di Yin, Jinlong Shu.
+
 
 - `ICLR 2025 (Spotlight)` [OS-ATLAS: A Foundation Action Model For Generalist GUI Agents](https://arxiv.org/abs/2410.23218), <span style="color:red"></span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Atlas?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Atlas)<br> Zhiyong Wu\*, Zhenyu Wu\*, Fangzhi Xu\*, Yian Wang\*, Qiushi Sun, Chengyou Jia, Kanzhi Cheng, **Zichen Ding**, Liheng Chen, Paul Pu Liang, Yu Qiao.
 
