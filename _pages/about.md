@@ -103,6 +103,12 @@ My research interests include:
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
+<!--# 🔍 Services
+- I serve(d) as a reviewer / program committee member for the following conferences, journals:
+  - Conferences: EMNLP'23, ACL'23, CIKM'23, EMNLP'23 <span style="color:#ac530f">(Best Reviewer Award)</span>, ICLR'24, NeurIPS'24, NLPCC'24, ICLR'25, COLING'25, NAACL'25, SIGKDD'25, COLM'25.
+  - Journals: ACL Rolling Review (2023.4 - Present), Frontiers of Computer Science-->
+
+
 <!--<div style="width: 200px; height: 200px; overflow: hidden;">
     <script type="text/javascript" id="clstr_globe" 
         src="//clustrmaps.com/globe.js?d=C73LXGj9hHgRHh1tddEIc_z3OH7DwCLi_0X65fA9TeQ"></script>
