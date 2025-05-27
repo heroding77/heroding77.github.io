@@ -48,6 +48,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
+        <li><em>2025.05</em>: 🔬🧪 We release <a href="https://qiushisun.github.io/ScienceBoard-Home/">ScienceBoard</a> to advance computer-using agents in scientific workflows!</li>
         <li><em>2025.05</em>: 🥂🥂 Our paper <a href="https://arxiv.org/abs/2412.19723">OS-Genesis</a> and <a href="https://arxiv.org/pdf/2410.21728">LBS3</a> are  accepted to ACL 2025! 🇦🇹</li>
         <li><em>2025.04</em>: 🤖🤖 We release <a href="https://github.com/hkust-nlp/GUIMid">GUIMid</a>, A new paradigm for training GUI agents!</li>
         <li><em>2025.03</em>: 🏖️🏖️ Will attend ICLR 2025! See you at Singapore! 🇸🇬</li>
