@@ -19,7 +19,7 @@ redirect_from:
 
 <!-- - I am currently a third-year Master's Student at the School of Data Science and Engineering, East China Normal University, under the supervision of Prof. Ming Gao and [Prof. Xiang Li](https://lixiang3776.github.io/) in the X101 lab. I am also a research intern at Shanghai AI Lab, supervised by [Dr. Wenhai Wang](https://whai362.github.io/) and [Dr. Zhiyong Wu](https://lividwo.github.io/zywu.github.io/).-->
 
-I am currently a Research Engineer in InternVL Group, Shanghai AI Laboratory. I earned my master's degree from the School of Data Science and Engineering, East China Normal University, advised by Prof. Ming Gao and [Prof. Xiang Li](https://lixiang3776.github.io/) in the X101 lab. I completed my undergraduate studies at the School of Software, Dalian University of Technology.
+I am currently a Research Engineer in InternVL Group, Shanghai AI Laboratory. Before that, I received my M.Eng. degree from the [School of Data Science and Engineering](https://dase.ecnu.edu.cn/), [East China Normal University](https://www.ecnu.edu.cn/) in 2025, advised by Prof. Ming Gao and [Prof. Xiang Li](https://lixiang3776.github.io/) in X101 lab, and  B.Eng. degree at the [School of Software](https://ss.dlut.edu.cn/), [Dalian University of Technology](https://www.dlut.edu.cn/) in 2022, respectively.
 
 
 My research interests include:
