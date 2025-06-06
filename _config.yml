@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zichen Ding"
   avatar           : "images/person.jpg"
-  bio              : "A Research Engineer in InternVL Group, Shanghai AI Laboratory."
+  bio              : "A Research Engineer in OpenGVLab, Shanghai AI Laboratory."
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
