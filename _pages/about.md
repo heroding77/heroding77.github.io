@@ -22,9 +22,9 @@ redirect_from:
 I am currently a Research Engineer in [OpenGVLab](https://github.com/opengvlab), Shanghai AI Laboratory, collaborating with [Dr. Wenhai Wang](https://whai362.github.io/) and [Dr. Weijie Su](https://www.weijiesu.com/). Before that, I received my M.Eng. degree from the [School of Data Science and Engineering](https://dase.ecnu.edu.cn/), [East China Normal University](https://www.ecnu.edu.cn/) in 2025, advised by Prof. Ming Gao and [Prof. Xiang Li](https://lixiang3776.github.io/) in X101 lab, and B.Eng. degree at the [School of Software](https://ss.dlut.edu.cn/), [Dalian University of Technology](https://www.dlut.edu.cn/) in 2022, respectively.
 
 My research interests include:
-- **AI Agents:** Multi-Agent, OS Agent, GUI Agent;
-- **Scientific Research:** automated peer reviewing, review completion;
-- **LLMs:** inference tuning, domain foundation model, knowledge editing, PEFT.
+- **AI Agents:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25);
+- **Scientific Research:** [SEA](https://arxiv.org/abs/2407.12857)(EMNLP'24), [SEAGraph](https://arxiv.org/pdf/2412.11939), [ScienceBoard](https://arxiv.org/abs/2505.19897);
+- **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
 
 ★★★ Feel free to reach out to me for academic discussions and collaborations!
 
