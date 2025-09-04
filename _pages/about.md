@@ -25,6 +25,7 @@ My research interests include:
 - **AI Agents:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25), [MMBench-GUI](https://arxiv.org/pdf/2507.19478);
 - **Scientific Research:** [SEA](https://arxiv.org/abs/2407.12857)(EMNLP'24), [SEAGraph](https://arxiv.org/pdf/2412.11939), [ScienceBoard](https://arxiv.org/abs/2505.19897);
 - **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
+- **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265)
 
 ★★★ Feel free to reach out to me for academic discussions and collaborations!
 
@@ -50,6 +51,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
+        <li><em>2025.07</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, welcome to have a try!</li>      
         <li><em>2025.07</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2504.10127">GUIMid</a> is accepted to COLM 2025! 🇨🇦</li>
         <li><em>2025.05</em>: 🔬🧪 We release <a href="https://qiushisun.github.io/ScienceBoard-Home/">ScienceBoard</a> to advance computer-using agents in scientific workflows!</li>
         <li><em>2025.05</em>: 🥂🥂 Our paper <a href="https://arxiv.org/abs/2412.19723">OS-Genesis</a> and <a href="https://arxiv.org/pdf/2410.21728">LBS3</a> are accepted to ACL 2025! 🇦🇹</li>
