@@ -25,7 +25,7 @@ My research interests include:
 - **AI Agents:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25), [MMBench-GUI](https://arxiv.org/pdf/2507.19478);
 - **Scientific Research:** [SEA](https://arxiv.org/abs/2407.12857)(EMNLP'24), [SEAGraph](https://arxiv.org/pdf/2412.11939), [ScienceBoard](https://arxiv.org/abs/2505.19897);
 - **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
-- **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265)
+- **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265).
 
 ★★★ Feel free to reach out to me for academic discussions and collaborations!
 
