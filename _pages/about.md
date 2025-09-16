@@ -51,7 +51,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
-        <li><em>2025.07</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, welcome to have a try!</li>      
+        <li><em>2025.07</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, a new family of open-source multimodal models that significantly advances along the InternVL series, welcome to have a try!</li>      
         <li><em>2025.07</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2504.10127">GUIMid</a> is accepted to COLM 2025! 🇨🇦</li>
         <li><em>2025.05</em>: 🔬🧪 We release <a href="https://qiushisun.github.io/ScienceBoard-Home/">ScienceBoard</a> to advance computer-using agents in scientific workflows!</li>
         <li><em>2025.05</em>: 🥂🥂 Our paper <a href="https://arxiv.org/abs/2412.19723">OS-Genesis</a> and <a href="https://arxiv.org/pdf/2410.21728">LBS3</a> are accepted to ACL 2025! 🇦🇹</li>
