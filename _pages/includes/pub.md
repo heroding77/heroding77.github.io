@@ -5,14 +5,14 @@
 <div class='paper-box-text' markdown="1">
 
 [ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
-Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhenyu Wu\*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Xuan Dong, Yue Yu, Chenyu Lu, YunXiang Mo, Yao Yan, Zeyue Tian, Xiao Zhang, Yuan Huang, Yiqian Liu, Weijie Su, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.
+Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhenyu Wu\*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Zeyue Tian, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.
 
 (\* means equal contributions)
 
 - Check code, dataset & models at [**Our Github**](https://github.com/OpenGVLab/ScaleCUA) and [**Our HF Collections**](https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003). 🤗
 - The first open-source framework and dataset for truly cross-platform Computer Use Agents. 🤖
 - Achieve the SOTA results on MMBench-GUI, ScreenSpot-Pro, and WebArena-Lite-v2, etc. 🏆
-- Provide a complete training pipeline to advance general-purpose GUI agents. 🚀
+- Provide a comprehensive training recipe to advance CUA agents. 🚀
 
 </div>
 </div>
