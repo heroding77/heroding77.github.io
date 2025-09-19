@@ -1,13 +1,42 @@
 
 # 📝 Selected Publications  <a href='https://scholar.google.com/citations?user=N4NNsRMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/scale_cua.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
+Zhaoyang Liu\*, JingJing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhenyu Wu\*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Xuan Dong, Yue Yu, Chenyu Lu, YunXiang Mo, Yao Yan, Zeyue Tian, Xiao Zhang, Yuan Huang, Yiqian Liu, Weijie Su, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.
+
+(\* means equal contributions)
+
+- Check code, dataset & models at [**Our Github**](https://github.com/OpenGVLab/ScaleCUA) and [**Our HF Collections**](https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003). 🤗
+- The first open-source framework and dataset for truly cross-platform Computer Use Agents. 🤖
+- Achieve the SOTA results on MMBench-GUI, ScreenSpot-Pro, and WebArena-Lite-v2, etc. 🏆
+- Provide a complete training pipeline to advance general-purpose GUI agents. 🚀
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/mmbench_gui.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents 🔥🔥](https://arxiv.org/abs/2507.19478) [![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI) \\
+Xuehui Wang\*, Zhenyu Wu\*, JingJing Xie\*, **Zichen Ding\***, Bowen Yang\*, Zehao Li\*, Zhaoyang Liu\*, Qingyun Li, Xuan Dong, Zhe Chen, Weiyun Wang, Xiangyu Zhao, Jixuan Chen, Haodong Duan, Tianbao Xie, Chenyu Yang, Shiqian Su, Yue Yu, Yuan Huang, Yiqian Liu, Xiao Zhang, Yanting Zhang, Xiangyu Yue, Weijie Su, Xizhou Zhu, Wei Shen, Jifeng Dai, Wenhai Wang.
+
+- Check code at [**Our Project**](https://github.com/open-compass/MMBench-GUI). 🎬
+- A cross-platform, hierarchical benchmark designed to comprehensively evaluate GUI agents. 🔍
+- Introduce EQA to jointly assess both the success and efficiency of agent behavior in online tasks. 🧐
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLM 2025</div><img src='images/publications/mid_training.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Breaking the Data Barrier – Building GUI Agents Through Task Generalization 🔥🔥](https://arxiv.org/pdf/2504.10127) [![](https://img.shields.io/github/stars/hkust-nlp/GUIMid?style=social&label=Code+Stars)](https://github.com/hkust-nlp/GUIMid) \\
+[Breaking the Data Barrier – Building GUI Agents Through Task Generalization](https://arxiv.org/pdf/2504.10127) [![](https://img.shields.io/github/stars/hkust-nlp/GUIMid?style=social&label=Code+Stars)](https://github.com/hkust-nlp/GUIMid) \\
 Junlei Zhang\*, **Zichen Ding\***, Chang Ma, Zijie Chen, Qiushi Sun, Zhenzhong Lan, Junxian He.
-
-(\* means equal contributions)
 
 - Check code at [**Our Project**](https://github.com/hkust-nlp/GUIMid). 📽️
 - Provide insights into cross-domain knowledge transfer for GUI agents. 🤖
@@ -46,7 +75,7 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 
 - `Preprint` [InternVL3.5: Advancing Open-Source Multimodal Models in Versatility, Reasoning, and Efficiency](https://arxiv.org/abs/2507.19478),[![](https://img.shields.io/github/stars/OpenGVLab/InternVL?style=social&label=Code+Stars)](https://github.com/OpenGVLab/InternVL)<br> Weiyun Wang, Zhangwei Gao, Lixin Gu, Hengjun Pu, Long Cui, Xingguang Wei, Zhaoyang Liu, Linglin Jing, Shenglong Ye, Jie Shao, Zhaokai Wang, Zhe Chen, Hongjie Zhang, Ganlin Yang, Haomin Wang, Qi Wei, Jinhui Yin, Wenhao Li, Erfei Cui, Guanzhou Chen, **Zichen Ding**, Changyao Tian, Zhenyu Wu, Jingjing Xie, Zehao Li, Bowen Yang, Yuchen Duan, Xuehui Wang, Songze Li, Xiangyu Zhao, Haodong Duan, Nianchen Deng, Bin Fu, Yinan He, Yi Wang, Conghui He, Botian Shi, Junjun He, Yingtong Xiong, Han Lv, Lijun Wu, Wenqi Shao, Kaipeng Zhang, Huipeng Deng, Biqing Qi, Jiaye Ge, Qipeng Guo, Wenwei Zhang, Wanli Ouyang, Limin Wang, Min Dou, Xizhou Zhu, Tong Lu, Dahua Lin, Jifeng Dai, Bowen Zhou, Weijie Su, Kai Chen, Yu Qiao, Wenhai Wang, Gen Luo.
 
-- `Preprint` [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents](https://arxiv.org/abs/2507.19478),[![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI)<br> Xuehui Wang\*, Zhenyu Wu\*, JingJing Xie\*, **Zichen Ding\***, Bowen Yang\*, Zehao Li\*, Zhaoyang Liu\*, Qingyun Li, Xuan Dong, Zhe Chen, Weiyun Wang, Xiangyu Zhao, Jixuan Chen, Haodong Duan, Tianbao Xie, Chenyu Yang, Shiqian Su, Yue Yu, Yuan Huang, Yiqian Liu, Xiao Zhang, Yanting Zhang, Xiangyu Yue, Weijie Su, Xizhou Zhu, Wei Shen, Jifeng Dai, Wenhai Wang.
+<!-- - `Preprint` [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents](https://arxiv.org/abs/2507.19478),[![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI)<br> Xuehui Wang\*, Zhenyu Wu\*, JingJing Xie\*, **Zichen Ding\***, Bowen Yang\*, Zehao Li\*, Zhaoyang Liu\*, Qingyun Li, Xuan Dong, Zhe Chen, Weiyun Wang, Xiangyu Zhao, Jixuan Chen, Haodong Duan, Tianbao Xie, Chenyu Yang, Shiqian Su, Yue Yu, Yuan Huang, Yiqian Liu, Xiao Zhang, Yanting Zhang, Xiangyu Yue, Weijie Su, Xizhou Zhu, Wei Shen, Jifeng Dai, Wenhai Wang. -->
 
 - `WCUA@ICML 2025` [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897),[![](https://img.shields.io/github/stars/OS-Copilot/ScienceBoard?style=social&label=Code+Stars)](https://github.com/OS-Copilot/ScienceBoard)<br> Qiushi Sun, Zhoumianze Liu, Chang Ma, **Zichen Ding**, Fangzhi Xu, Zhangyue Yin, Haiteng Zhao, Zhenyu Wu, Kanzhi Cheng, Zhaoyang Liu, Jianing Wang, Qintong Li, Xiangru Tang, Tianbao Xie, Xiachong Feng, Xiang Li, Ben Kao, Wenhai Wang, Biqing Qi, Lingpeng Kong, Zhiyong Wu.
 
