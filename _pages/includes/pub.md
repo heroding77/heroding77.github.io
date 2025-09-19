@@ -12,7 +12,7 @@ Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhe
 - Check code, dataset & models at [**Our Github**](https://github.com/OpenGVLab/ScaleCUA) and [**Our HF Collections**](https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003). 🤗
 - The first open-source framework and dataset for truly cross-platform Computer Use Agents. 🤖
 - Achieve the SOTA results on MMBench-GUI, ScreenSpot-Pro, and WebArena-Lite-v2, etc. 🏆
-- Provide a comprehensive training recipe to advance CUA agents. 🚀
+- Provide a comprehensive training recipe to advance computer-use agents. 🚀
 
 </div>
 </div>
