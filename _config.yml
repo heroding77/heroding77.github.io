@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zichen Ding"
   avatar           : "images/person.jpg"
-  bio              : "A Research Engineer in OpenGVLab, Shanghai AI Laboratory."
+  bio              : "A Researcher in OpenGVLab, Shanghai AI Laboratory."
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com.hk/citations?user=N4NNsRMAAAAJ"
-  email            : "heroding77@gmail.com"
+  email            : "zichending@stu.ecnu.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
