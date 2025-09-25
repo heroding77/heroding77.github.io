@@ -80,7 +80,7 @@ My research interests include:
 {% include_relative includes/pub.md %}
 
 # 📖 Educations
-- *2022.09 - 2025.06*, Master's, DASE, East China Normal University <span style="color:#ac530f">(via recommendation)</span> <img src='./images/logos/dase_log1.png' style='width: 5em;'>
+- *2022.09 - 2025.06*, Master's, DASE, East China Normal University <span style="color:red">(via recommendation)</span> <img src='./images/logos/dase_log1.png' style='width: 5em;'>
 - *2018.09 - 2022.06*, Undergraduate, School of Software Engineering, Dalian University of Technology <img src='./images/logos/dlut.png' style='width: 5.5em;'>
 
 # 💻 Internships
