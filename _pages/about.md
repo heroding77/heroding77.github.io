@@ -50,7 +50,7 @@ My research interests include:
     }
 </style>  
 <div class="scrollable-area">  
-    <ul>
+    <ul>       
         <li><em>2025.09</em>: 🖥️📱 We released <a href="https://github.com/OpenGVLab/ScaleCUA">ScaleCUA</a>, the first open-source framework and dataset for truly cross-platform Computer Use Agents!</li>          
         <li><em>2025.08</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, a new family of advanced open-source MLLMs, welcome to have a try!</li>      
         <li><em>2025.07</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2504.10127">GUIMid</a> is accepted to COLM 2025! 🇨🇦</li>
@@ -80,7 +80,7 @@ My research interests include:
 {% include_relative includes/pub.md %}
 
 # 📖 Educations
-- *2022.09 - 2025.06*, Master's, DASE, East China Normal University (via recommendation) <img src='./images/logos/dase_log1.png' style='width: 5em;'>
+- *2022.09 - 2025.06*, Master's, DASE, East China Normal University <span style="color:#ac530f">(via recommendation)</span> <img src='./images/logos/dase_log1.png' style='width: 5em;'>
 - *2018.09 - 2022.06*, Undergraduate, School of Software Engineering, Dalian University of Technology <img src='./images/logos/dlut.png' style='width: 5.5em;'>
 
 # 💻 Internships
@@ -111,10 +111,10 @@ My research interests include:
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-<!--# 🔍 Services
+# 🔍 Services
 - I serve(d) as a reviewer / program committee member for the following conferences, journals:
-  - Conferences: EMNLP'23, ACL'23, CIKM'23, EMNLP'23 <span style="color:#ac530f">(Best Reviewer Award)</span>, ICLR'24, NeurIPS'24, NLPCC'24, ICLR'25, COLING'25, NAACL'25, SIGKDD'25, COLM'25.
-  - Journals: ACL Rolling Review (2023.4 - Present), Frontiers of Computer Science-->
+  - Conferences: SIGIR'25, ACL'25, SIGKDD'25, COLM'25, ICLR'26.
+  - Journals: ACL Rolling Review, Frontiers of Computer Science
 
 
 <!--<div style="width: 200px; height: 200px; overflow: hidden;">
