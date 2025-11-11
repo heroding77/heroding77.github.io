@@ -19,10 +19,10 @@ redirect_from:
 
 <!-- - I am currently a third-year Master's Student at the School of Data Science and Engineering, East China Normal University, under the supervision of Prof. Ming Gao and [Prof. Xiang Li](https://lixiang3776.github.io/) in the X101 lab. I am also a research intern at Shanghai AI Lab, supervised by [Dr. Wenhai Wang](https://whai362.github.io/) and [Dr. Zhiyong Wu](https://lividwo.github.io/zywu.github.io/).-->
 
-I am currently a Researcher in [OpenGVLab](https://github.com/opengvlab), Shanghai AI Laboratory, collaborating with [Dr. Kai Chen](https://chenkai.site/). Previously, I collaborated with [Dr. Wenhai Wang](https://whai362.github.io/) and [Dr. Zhiyong Wu](https://lividwo.github.io/zywu.github.io/). Before that, I received my M.Eng. degree from the [School of Data Science and Engineering](https://dase.ecnu.edu.cn/), [East China Normal University](https://www.ecnu.edu.cn/) in 2025, advised by [Prof. Ming Gao](https://scholar.google.com/citations?user=vwI3qB0AAAAJ&hl=zh-CN&oi=ao) and [Prof. Xiang Li](https://lixiang3776.github.io/) in X101 lab, and B.Eng. degree at the [School of Software](https://ss.dlut.edu.cn/), [Dalian University of Technology](https://www.dlut.edu.cn/) in 2022, respectively.
+I am currently a Researcher in [OpenGVLab](https://github.com/opengvlab), Shanghai AI Laboratory, collaborating with [Dr. Kai Chen](https://chenkai.site/) and [Dr. Zun Wang](https://scholar.google.com/citations?user=6MTUgHcAAAAJ&hl=zh-CN&oi=ao). Previously, I collaborated with [Dr. Wenhai Wang](https://whai362.github.io/) and [Dr. Zhiyong Wu](https://lividwo.github.io/zywu.github.io/). Before that, I received my M.Eng. degree from the [School of Data Science and Engineering](https://dase.ecnu.edu.cn/), [East China Normal University](https://www.ecnu.edu.cn/) in 2025, advised by [Prof. Ming Gao](https://scholar.google.com/citations?user=vwI3qB0AAAAJ&hl=zh-CN&oi=ao) and [Prof. Xiang Li](https://lixiang3776.github.io/) in X101 lab, and B.Eng. degree at the [School of Software](https://ss.dlut.edu.cn/), [Dalian University of Technology](https://www.dlut.edu.cn/) in 2022, respectively.
 
 My research interests include:
-- **Computer-Use Agent:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25), [ScaleCUA](https://arxiv.org/abs/2509.15221), [MMBench-GUI](https://arxiv.org/pdf/2507.19478);
+- **Computer-Using Agent:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25), [ScaleCUA](https://arxiv.org/abs/2509.15221), [MMBench-GUI](https://arxiv.org/pdf/2507.19478), [OS-Sentinel](https://arxiv.org/abs/2510.24411);
 - **Scientific Research:** [SEA](https://arxiv.org/abs/2407.12857)(EMNLP'24), [SEAGraph](https://arxiv.org/pdf/2412.11939), [ScienceBoard](https://arxiv.org/abs/2505.19897);
 - **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
 - **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265).
@@ -50,7 +50,8 @@ My research interests include:
     }
 </style>  
 <div class="scrollable-area">  
-    <ul>       
+    <ul>
+        <li><em>2025.10</em>: 🛡️🤖 We launch <a href="https://arxiv.org/abs/2510.24411"> OS-Sentinel</a> and <a href="https://huggingface.co/datasets/OS-Copilot/MobileRisk">MobileRisk</a> to advance the safety research of mobile agents. </li>
         <li><em>2025.09</em>: 🖥️📱 We released <a href="https://github.com/OpenGVLab/ScaleCUA">ScaleCUA</a>, the first open-source framework and dataset for truly cross-platform Computer Use Agents!</li>          
         <li><em>2025.08</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, a new family of advanced open-source MLLMs, welcome to have a try!</li>      
         <li><em>2025.07</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2504.10127">GUIMid</a> is accepted to COLM 2025! 🇨🇦</li>
