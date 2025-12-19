@@ -53,6 +53,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
+        <li><em>2025.12</em>: 🔍🤖 We present <a href="https://arxiv.org/abs/2512.16295"> OS-Oracle</a> and <a href="https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench">OS-Critic Bench</a>, supporting the full CUA lifecycle and closing the gap in CUA critic evaluation. </li>      
         <li><em>2025.10</em>: 🛡️🤖 We launch <a href="https://arxiv.org/abs/2510.24411"> OS-Sentinel</a> and <a href="https://huggingface.co/datasets/OS-Copilot/MobileRisk">MobileRisk</a> to advance the safety research of mobile agents. </li>
         <li><em>2025.09</em>: 🖥️📱 We released <a href="https://github.com/OpenGVLab/ScaleCUA">ScaleCUA</a>, the first open-source framework and dataset for truly cross-platform Computer Use Agents!</li>          
         <li><em>2025.08</em>: 🎉🎉 Our team released <a href="https://huggingface.co/collections/OpenGVLab/internvl35-68ac87bd52ebe953485927fb">InternVL3.5</a>, a new family of advanced open-source MLLMs, welcome to have a try!</li>      
