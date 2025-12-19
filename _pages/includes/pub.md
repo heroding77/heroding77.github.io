@@ -1,6 +1,24 @@
 
 # 📝 Selected Publications  <a href='https://scholar.google.com/citations?user=N4NNsRMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_oracle.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+[OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295
+) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
+Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding**✉️
+(\* means equal contributions)
+
+- Check code, dataset & models at [**Our Github**](https://github.com/numbmelon/OS-Oracle) and [**Our HF Collections**](https://huggingface.co/datasets/OS-Copilot). 🤗
+- A scalable data pipeline for synthesizing cross-platform GUI critic data. 📊
+- Introducing an elaborate training recipe that integrates SFT with CP-GRPO. 🧠
+- A holistic benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms. ⚖️
+- OS-Oracle-7B achieves the SOTA results on OS-Critic Bench and support the full CUA lifecycle. 🏆
+
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/scale_cua.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
