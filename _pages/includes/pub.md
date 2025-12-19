@@ -6,7 +6,8 @@
 [OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295
 ) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
 Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding** ✉️
-(\* means equal contributions)
+  
+(\* means equal contributions, ✉️ means corresponding author.)
 
 - Check code, dataset & models at [**Our Github**](https://github.com/numbmelon/OS-Oracle) and [**Our HF Collections**](https://huggingface.co/datasets/OS-Copilot). 🤗
 - A scalable data pipeline for synthesizing cross-platform GUI critic data. 📊
@@ -24,8 +25,6 @@ Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zho
 
 [ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
 Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhenyu Wu\*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Zeyue Tian, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.
-
-(\* means equal contributions)
 
 - Check code, dataset & models at [**Our Github**](https://github.com/OpenGVLab/ScaleCUA) and [**Our HF Collections**](https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003). 🤗
 - The first open-source framework and dataset for truly cross-platform Computer Use Agents. 🤖
