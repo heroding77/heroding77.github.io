@@ -27,8 +27,8 @@ My research interests include:
 - **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
 - **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265).
 
-<!-- - ★★★ Feel free to reach out to me for academic discussions and collaborations! -->
-<span style="color: red; font-weight: bold;">★★★ I am looking for interns to work with me on Computer-Using Agents and Agentic RL, please feel free to hit me up with your CV or questions if interested.</span>
+★★★ Feel free to reach out to me for academic discussions and collaborations!
+<!-- <span style="color: red; font-weight: bold;">★★★ I am looking for interns to work with me on Computer-Using Agents and Agentic RL, please feel free to hit me up with your CV or questions if interested.</span> -->
 
 
 # 🔥 News
