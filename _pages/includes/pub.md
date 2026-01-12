@@ -5,9 +5,9 @@
 <div class='paper-box-text' markdown="1">
 [OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295
 ) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
-Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding** ✉️
+Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding**✉
   
-(\* means equal contributions, ✉️ means corresponding author.)
+(\* means equal contributions, ✉ means corresponding author.)
 
 - Check code, dataset & models at [**Our Github**](https://github.com/numbmelon/OS-Oracle) and [**Our HF Collections**](https://huggingface.co/datasets/OS-Copilot). 🤗
 - A scalable data pipeline for synthesizing cross-platform GUI critic data. 📊
