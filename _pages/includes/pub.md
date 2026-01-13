@@ -1,10 +1,27 @@
 
 # 📝 Selected Publications  <a href='https://scholar.google.com/citations?user=N4NNsRMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_symphony.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+[OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent 🔥🔥](https://arxiv.org/pdf/2601.07779) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Symphony?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Symphony) \\
+Bowen Yang\*, Kaiming Jin\*, Zhenyu Wu, Zhaoyang Liu, Qiushi Sun, Zehao Li, JingJing Xie, Zhoumianze Liu, Fangzhi Xu, Kanzhi Cheng, Qingyun Li, Yian Wang, Yu Qiao, Zun Wang, **Zichen Ding**✉
+  
+(\* means equal contributions, ✉ means corresponding author.)
+
+- Check code, demos at [**Our Github**](https://github.com/OS-Copilot/OS-Symphony) and [**Our Website**](https://os-copilot.github.io/OS-Symphony/). 🌐
+- A Holistic Framework for Robust and Generalist Computer-Using Agent. 🏗️
+- Leveraging milestone-driven long-term memory to stay robust over long-horizon tasks. 🧠
+- Introducing a browser-based sandbox to retrieve visually grounded GUI know-how from documentation. 📄
+- OS-Symphony achieves the SOTA results on OSWorld(65.8%), WindowsAgentArena(65.8%), MacOSArena(65.8%). 🏆
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_oracle.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
-[OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295
-) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
+[OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
 Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding**✉
   
 (\* means equal contributions, ✉ means corresponding author.)
