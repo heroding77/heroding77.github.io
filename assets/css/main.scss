@@ -40,6 +40,50 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+// .paper-box {
+//     display: flex;
+//     justify-content: left;
+//     align-items: center;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     border-bottom: 1px #efefef solid;
+//     padding: 2em 0 2em 0;
+    
+
+//     .paper-box-image{
+//         justify-content: center;
+//         display: flex;
+//         width: 100%;
+//         order: 2;
+//         img {
+//             max-width: 400px;
+//             box-shadow: 3px 3px 6px #888;
+//             object-fit: cover;
+//         }
+//     }
+    
+//     .paper-box-text{
+//         max-width: 100%;
+//         order: 1;
+//     }
+    
+//     @include breakpoint($medium) {
+//         .paper-box-image{
+//             justify-content: left;
+//             min-width: 200px;
+//             max-width: 40%;
+//             order: 1;
+//         }
+        
+//         .paper-box-text{
+//             justify-content: left;
+//             padding-left: 2em;
+//             max-width: 60%;
+//             order: 2;
+//         }
+
+//     }
+
 .paper-box {
     display: flex;
     justify-content: left;
@@ -47,42 +91,70 @@
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+    // padding: 2em 0 2em 0;
+    padding: 0.75em 0 0.75em 0;
     
-
-    .paper-box-image{
+    .paper-box-image {
         justify-content: center;
         display: flex;
         width: 100%;
         order: 2;
+        position: relative; // 保持 relative 定位
+
+        /* --- 关键修改 ① --- */
+        /* 将 transition 移到容器上 */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
         img {
             max-width: 400px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
+            /* 图片不再需要 transition 和 cursor */
+        }
+
+        /* --- 关键修改 ② --- */
+        /* 现在是对容器本身进行 transform，而不是对 img */
+        &:hover {
+            z-index: 1000;      /* 提升容器的层级 */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* 阴影也应用到容器上 */
+            
+            /* 核心：对容器进行放大和位移 */
+            transform: scale(1.8) translate(-20%, -15%);
         }
     }
     
-    .paper-box-text{
+    .paper-box-text {
         max-width: 100%;
         order: 1;
+
+        /* --- 从这里开始添加 --- */
+        ul {
+        /* 可选：去掉整个列表(ul)底部的额外间距 */
+            margin-bottom: 0; 
+            li {
+            /* 这是控制每个列表项(li)之间间距的关键 */
+            margin-bottom: 0.25rem; /* 你可以改成 0.5rem, 0.1rem, 甚至 0 */
+            }
+        }
     }
     
     @include breakpoint($medium) {
-        .paper-box-image{
+        .paper-box-image {
             justify-content: left;
             min-width: 200px;
             max-width: 40%;
             order: 1;
         }
         
-        .paper-box-text{
+        .paper-box-text {
             justify-content: left;
             padding-left: 2em;
             max-width: 60%;
             order: 2;
         }
-
     }
+}
+
 
 
 }
