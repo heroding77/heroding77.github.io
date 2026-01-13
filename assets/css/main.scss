@@ -1,44 +1,44 @@
-// ---
-// ---
+---
+---
 
-// /*
-//  *    Minimal Mistakes Jekyll Theme
-//  *
-//  *  - Michael Rose
-//  *  - mademistakes.com
-//  *  - https://twitter.com/mmistakes
-//  *
-// */
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
 
-// @import "vendor/breakpoint/breakpoint"; // media query mixins
-// @import "variables";
-// @import "mixins";
-// @import "vendor/susy/susy";
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
 
-// @import "reset";
-// @import "base";
+@import "reset";
+@import "base";
 
-// @import "utilities";
-// @import "animations";
-// @import "tables";
-// @import "buttons";
-// @import "notices";
-// @import "masthead";
-// @import "navigation";
-// @import "footer";
-// @import "syntax";
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
 
-// @import "forms";
+@import "forms";
 
-// @import "page";
-// @import "archive";
-// @import "sidebar";
+@import "page";
+@import "archive";
+@import "sidebar";
 
-// @import "vendor/font-awesome/fontawesome";
-// @import "vendor/font-awesome/solid";
-// @import "vendor/font-awesome/brands";
-// @import "vendor/magnific-popup/magnific-popup";
-// @import "print";
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
 
 // .paper-box {
 //     display: flex;
@@ -130,81 +130,67 @@
 
 .paper-box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   border-bottom: 1px #efefef solid;
   padding: 0.75em 0;
-}
 
-.paper-box .paper-box-image {
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  order: 2;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  // 关键：允许放大后溢出显示（避免被裁剪）
+  overflow: visible;
 
-.paper-box .paper-box-image img {
-  max-width: 400px;
-  box-shadow: 3px 3px 6px #888;
-  object-fit: cover;
-}
+  .paper-box-image {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    order: 2;
 
-.paper-box .paper-box-image:hover {
-  z-index: 1000;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transform: scale(1.8) translate(-20%, -15%);
-}
+    // 关键：让 z-index 生效
+    position: relative;
+    overflow: visible;
 
-.paper-box .paper-box-text {
-  max-width: 100%;
-  order: 1;
-}
+    img {
+      max-width: 400px;
+      box-shadow: 3px 3px 6px #888;
+      object-fit: cover;
 
-.paper-box .paper-box-text ul {
-  margin-bottom: 0;
-}
+      // 旧思路：放大 img
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform-origin: left center;  // 可选：让放大更“贴左”
+      position: relative;             // 关键：让 img 自己也能叠层
+      z-index: 1;
+    }
 
-.paper-box .paper-box-text ul li {
-  margin-bottom: 0.25rem;
-}
+    &:hover {
+      z-index: 1000; // 关键：整个图片区块提到上层
+    }
 
-/* 这里的断点你得用原生 media query 替代 $medium */
-@media (min-width: 768px) {
-  .paper-box .paper-box-image {
-    justify-content: flex-start;
-    min-width: 200px;
-    max-width: 40%;
+    &:hover img {
+      z-index: 1001; // 再保险一点
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transform: scale(1.8) translate(-20%, -15%);
+    }
+  }
+
+  .paper-box-text {
+    max-width: 100%;
     order: 1;
   }
-  .paper-box .paper-box-text {
-    justify-content: flex-start;
-    padding-left: 2em;
-    max-width: 60%;
-    order: 2;
+
+  @include breakpoint($medium) {
+    .paper-box-image {
+      justify-content: left;
+      min-width: 200px;
+      max-width: 40%;
+      order: 1;
+    }
+
+    .paper-box-text {
+      justify-content: left;
+      padding-left: 2em;
+      max-width: 60%;
+      order: 2;
+    }
   }
-}
-
-/* scroll offset（纯 CSS 版本需要写死数值） */
-h1:before, .anchor:before {
-  content: '';
-  display: block;
-  position: relative;
-  width: 0;
-  height: 2em;
-  margin-top: -2em;
-}
-
-.badge {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: absolute;
-  margin-top: .5em;
-  margin-left: -.5em;
-  color: white;
-  background-color: #00369f;
-  font-size: .8em;
 }
