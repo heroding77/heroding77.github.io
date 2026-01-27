@@ -37,7 +37,7 @@ Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zho
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/scale_cua.png' alt="sym" width="98%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/publications/scale_cua.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
@@ -113,7 +113,7 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 
 <!-- - `Preprint` [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents](https://arxiv.org/abs/2507.19478),[![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI)<br> Xuehui Wang\*, Zhenyu Wu\*, JingJing Xie\*, **Zichen Ding\***, Bowen Yang\*, Zehao Li\*, Zhaoyang Liu\*, Qingyun Li, Xuan Dong, Zhe Chen, Weiyun Wang, Xiangyu Zhao, Jixuan Chen, Haodong Duan, Tianbao Xie, Chenyu Yang, Shiqian Su, Yue Yu, Yuan Huang, Yiqian Liu, Xiao Zhang, Yanting Zhang, Xiangyu Yue, Weijie Su, Xizhou Zhu, Wei Shen, Jifeng Dai, Wenhai Wang. -->
 
-- `WCUA@ICML 2025` [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897),[![](https://img.shields.io/github/stars/OS-Copilot/ScienceBoard?style=social&label=Code+Stars)](https://github.com/OS-Copilot/ScienceBoard)<br> Qiushi Sun, Zhoumianze Liu, Chang Ma, **Zichen Ding**, Fangzhi Xu, Zhangyue Yin, Haiteng Zhao, Zhenyu Wu, Kanzhi Cheng, Zhaoyang Liu, Jianing Wang, Qintong Li, Xiangru Tang, Tianbao Xie, Xiachong Feng, Xiang Li, Ben Kao, Wenhai Wang, Biqing Qi, Lingpeng Kong, Zhiyong Wu.
+- `ICLR 2025` [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897), <span style="color:red">[Core A*]</span> [![](https://img.shields.io/github/stars/OS-Copilot/ScienceBoard?style=social&label=Code+Stars)](https://github.com/OS-Copilot/ScienceBoard)<br> Qiushi Sun, Zhoumianze Liu, Chang Ma, **Zichen Ding**, Fangzhi Xu, Zhangyue Yin, Haiteng Zhao, Zhenyu Wu, Kanzhi Cheng, Zhaoyang Liu, Jianing Wang, Qintong Li, Xiangru Tang, Tianbao Xie, Xiachong Feng, Xiang Li, Ben Kao, Wenhai Wang, Biqing Qi, Lingpeng Kong, Zhiyong Wu.
 
 - `ACL 2025` [Let's Be Self-generated via Step by Step: A Curriculum Learning Approach to Automated Reasoning with LLMs](https://arxiv.org/pdf/2410.21728), <span style="color:red">[CCF-A]</span> <br> Kangyang Luo, **Zichen Ding**, Zhenmin Weng, Lingfeng Qiao, Meng Zhao, Xiang Li, Di Yin, Jinlong Shu.
 
