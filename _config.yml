@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zichen Ding"
-description              : ""
+description              : "A Researcher in OpenGVLab, Shanghai AI Laboratory."
 repository               : "heroding77/heroding77.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zichen Ding"
   avatar           : "images/person.jpg"
-  bio              : "A Researcher in OpenGVLab, Shanghai AI Laboratory."
+  bio              : "丁子晨"
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
