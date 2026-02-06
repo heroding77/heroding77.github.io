@@ -135,9 +135,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   border-bottom: 1px #efefef solid;
-  padding: 0.75em 0;
-
-  // 关键：允许放大后溢出显示（避免被裁剪）
+  padding: 0.75em 0 0.75em 0;
+  
   overflow: visible;
 
   .paper-box-image {
@@ -145,30 +144,21 @@
     display: flex;
     width: 100%;
     order: 2;
-
-    // 关键：让 z-index 生效
     position: relative;
-    overflow: visible;
-
+    overflow: visible;  
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: left center;  
+    
     img {
       max-width: 400px;
       box-shadow: 3px 3px 6px #888;
       object-fit: cover;
-
-      // 旧思路：放大 img
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      transform-origin: left center;  // 可选：让放大更“贴左”
-      position: relative;             // 关键：让 img 自己也能叠层
-      z-index: 1;
     }
 
     &:hover {
-      z-index: 1000; // 关键：整个图片区块提到上层
-    }
-
-    &:hover img {
-      z-index: 1001; // 再保险一点
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      z-index: 1000;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       transform: scale(1.8) translate(-20%, -15%);
     }
   }
@@ -176,6 +166,13 @@
   .paper-box-text {
     max-width: 100%;
     order: 1;
+
+    ul {
+      margin-bottom: 0;
+      li {
+        margin-bottom: 0.25rem;
+      }
+    }
   }
 
   @include breakpoint($medium) {
@@ -193,4 +190,25 @@
       order: 2;
     }
   }
+}
+
+$scroll_offset: 2em;
+h1:before, .anchor:before { 
+  content: ''; 
+  display: block; 
+  position: relative; 
+  width: 0; 
+  height: $scroll_offset; 
+  margin-top: -$scroll_offset;
+}
+
+.badge {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  margin-top: .5em;
+  margin-left: -.5em;
+  color: white;
+  background-color: #00369f;
+  font-size: .8em;
 }
