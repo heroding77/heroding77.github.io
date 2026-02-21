@@ -19,7 +19,7 @@ Bowen Yang\*, Kaiming Jin\*, Zhenyu Wu, Zhaoyang Liu, Qiushi Sun, Zehao Li, Jing
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_oracle.png' alt="sym" width="98%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/publications/os_oracle.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 [OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
 Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding**✉
@@ -52,7 +52,7 @@ Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhe
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/mmbench_gui.png' alt="sym" width="98%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/publications/mmbench_gui.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents 🔥🔥](https://arxiv.org/abs/2507.19478) [![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI) \\
