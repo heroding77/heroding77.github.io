@@ -54,7 +54,7 @@ My research interests include:
 <div class="scrollable-area">  
     <ul>
         <li><em>2026.02</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2512.16295">OS-Oracle</a> and <a href="https://arxiv.org/pdf/2507.19478?">MMBench-GUI</a> are accepted to CVPR 2026! 🇺🇸</li>        
-        <li><em>2026.01</em>: 🎉🎉 Our paper <a href="https://arxiv.org/abs/2509.15221 ">ScaleCUA</a>(<span style="color: red; font-style: italic;">oral</span>) and <a href="https://arxiv.org/abs/2505.19897 ">ScienceBoard</a> are accepted to ICLR 2026! 🇧🇷</li>
+        <li><em>2026.01</em>: 🎉🎉 Our paper <a href="https://arxiv.org/abs/2509.15221 ">ScaleCUA</a>(<span style="color: red; font-style: italic;">Oral</span>) and <a href="https://arxiv.org/abs/2505.19897 ">ScienceBoard</a> are accepted to ICLR 2026! 🇧🇷</li>
         <li><em>2025.12</em>: 🎉🤖 We present <a href="https://arxiv.org/pdf/2601.07779"> OS-Symphony</a>, a holistic agentic framework for robust and generalist Computer-Using Agent! </li>      
         <li><em>2025.12</em>: 🔍🤖 We present <a href="https://arxiv.org/abs/2512.16295"> OS-Oracle</a> and <a href="https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench">OS-Critic Bench</a>, supporting the full CUA lifecycle and closing the gap in CUA critic evaluation. </li>      
         <li><em>2025.10</em>: 🛡️🤖 We launch <a href="https://arxiv.org/abs/2510.24411"> OS-Sentinel</a> and <a href="https://huggingface.co/datasets/OS-Copilot/MobileRisk">MobileRisk</a> to advance the safety research of mobile agents. </li>
