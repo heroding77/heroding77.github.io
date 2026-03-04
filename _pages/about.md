@@ -25,7 +25,7 @@ My research interests include:
 - **Computer-Using Agent:** [OS-Copilot](https://arxiv.org/pdf/2402.07456)(LLMAgents@ICLR'24), [OS-Atlas](https://arxiv.org/abs/2410.23218)(ICLR’25 *Spotlight*), [OS-Genesis](https://arxiv.org/abs/2412.19723)(ACL’25), [GUIMid](https://arxiv.org/pdf/2504.10127)(COLM'25), [ScaleCUA](https://arxiv.org/abs/2509.15221)(ICLR'26 *Oral*), [MMBench-GUI](https://arxiv.org/pdf/2507.19478)(CVPR'26), [OS-Sentinel](https://arxiv.org/abs/2510.24411), [OS-Oracle](https://arxiv.org/pdf/2512.16295)(CVPR'26), [OS-Symphony](https://arxiv.org/pdf/2601.07779);
 - **Scientific Research:** [SEA](https://arxiv.org/abs/2407.12857)(EMNLP'24), [SEAGraph](https://arxiv.org/pdf/2412.11939)(IJCNLP-AACL'25), [ScienceBoard](https://arxiv.org/abs/2505.19897)(ICLR'26);
 - **Prompt Tuning:** [RELIEF](https://arxiv.org/abs/2408.03195)(SIGKDD'25), [LBS3](https://arxiv.org/pdf/2410.21728)(ACL'25).
-- **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265),[InternS1-Pro](https://huggingface.co/internlm/Intern-S1-Pro).
+- **MLLM:** [InternVL3.5](https://arxiv.org/abs/2508.18265), [InternS1-Pro](https://huggingface.co/internlm/Intern-S1-Pro).
 
 ★★★ Feel free to reach out to me for academic discussions and collaborations!
 <!-- <span style="color: red; font-weight: bold;">★★★ I am looking for interns to work with me on Computer-Using Agents and Agentic RL, please feel free to hit me up with your CV or questions if interested.</span> -->
