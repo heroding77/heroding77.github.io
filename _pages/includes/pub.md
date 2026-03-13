@@ -21,7 +21,7 @@ Bowen Yang\*, Kaiming Jin\*, Zhenyu Wu, Zhaoyang Liu, Qiushi Sun, Zehao Li, Jing
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/publications/os_oracle.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
-[OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295) [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
+[OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models 🔥🔥](https://arxiv.org/pdf/2512.16295) <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/numbmelon/OS-Oracle?style=social&label=Code+Stars)](https://github.com/numbmelon/OS-Oracle) \\
 Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, **Zichen Ding**✉
   
 (\* means equal contributions, ✉ means corresponding author.)
@@ -40,7 +40,7 @@ Zhenyu Wu\*, Jingjing Xie\*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zho
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026 (Oral)</div><img src='images/publications/scale_cua.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
+[ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data 🔥🔥](https://arxiv.org/pdf/2509.15221) <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/OpenGVLab/ScaleCUA?style=social&label=Code+Stars)](https://github.com/OpenGVLab/ScaleCUA) \\
 Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhenyu Wu\*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Zeyue Tian, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.
 
 - Check code, dataset & models at [**Our Github**](https://github.com/OpenGVLab/ScaleCUA) and [**Our HF Collections**](https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003). 🤗
@@ -55,7 +55,7 @@ Zhaoyang Liu\*, Jingjing Xie\*, **Zichen Ding\***, Zehao Li\*, Bowen Yang\*, Zhe
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/publications/mmbench_gui.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents 🔥🔥](https://arxiv.org/abs/2507.19478) [![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI) \\
+[MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents 🔥🔥](https://arxiv.org/abs/2507.19478) <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/open-compass/MMBench-GUI?style=social&label=Code+Stars)](https://github.com/open-compass/MMBench-GUI) \\
 Xuehui Wang\*, Zhenyu Wu\*, Jingjing Xie\*, **Zichen Ding\***, Bowen Yang\*, Zehao Li\*, Zhaoyang Liu\*, Qingyun Li, Xuan Dong, Zhe Chen, Weiyun Wang, Xiangyu Zhao, Jixuan Chen, Haodong Duan, Tianbao Xie, Chenyu Yang, Shiqian Su, Yue Yu, Yuan Huang, Yiqian Liu, Xiao Zhang, Yanting Zhang, Xiangyu Yue, Weijie Su, Xizhou Zhu, Wei Shen, Jifeng Dai, Wenhai Wang.
 
 - Check code at [**Our Project**](https://github.com/open-compass/MMBench-GUI). 🎬
