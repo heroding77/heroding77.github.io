@@ -9,7 +9,7 @@ Zehao Li, Zhenyu Wu, Yibo Zhao, Bowen Yang, Jingjing Xie, Zhaoyang Liu, Zhoumian
 (\* means equal contributions, ✉ means corresponding author.)
 
 - Check code, OGRBench at [**Our Github**](https://github.com/OS-Copilot/OS-Themis) and [**Our HuggingFace**](https://huggingface.co/datasets/lizh1/OmniGUIRewardBench). 🌐
-- A scalable critic framework for generalist GUI rewards. ⚖️
+- A scalable critic framework for generalist GUI rewards. ⭐
 - A holistic ORM benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms. ⚖️
 
 </div>
