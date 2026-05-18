@@ -114,6 +114,8 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 </div>
 </div>
 
+- `Preprint` [OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis](https://arxiv.org/pdf/2604.15093),[![](https://img.shields.io/github/stars/njucckevin/OpenMobile-Code?style=social&label=Code+Stars)](https://github.com/njucckevin/OpenMobile-Code)<br> Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao, Qiushi Sun, **Zichen Ding**, Fangzhi Xu, Hang Yan, Jiajun Chen, Anh Tuan Luu, Jianbing Zhang, Lewei Lu, Dahua Lin.
+
 - `Preprint` [OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions](https://arxiv.org/pdf/2602.05843),[![](https://img.shields.io/github/stars/xufangzhi/Odyssey-Arena?style=social&label=Code+Stars)](https://github.com/xufangzhi/Odyssey-Arena)<br> Fangzhi Xu, Hang Yan, Qiushi Sun, Jinyang Wu, Zixian Huang, Muye Huang, Jingyang Gong, **Zichen Ding**, Kanzhi Cheng, Yian Wang, Xinyu Che, Zeyi Sun, Jian Zhang, Zhangyue Yin, Haoran Luo, Xuanjing Huang, Ben Kao, Jun Liu, Qika Lin.
 
 - `Preprint` [TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents](https://arxiv.org/pdf/2602.02196),[![](https://img.shields.io/github/stars/yayayacc/TIDE?style=social&label=Code+Stars)](https://github.com/yayayacc/TIDE)<br> Hang Yan, Xinyu Che, Fangzhi Xu, Qiushi Sun, **Zichen Ding**, Kanzhi Cheng, Jian Zhang, Tao Qin, Jun Liu, Qika Lin.
