@@ -53,7 +53,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
-        <li><em>2026.02</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2601.07779">OS-Symphony</a> and <a href="https://arxiv.org/abs/2510.24411">OS-Sentinel</a>(<span style="color: red; font-style: italic;">Oral</span>) are accepted to ACL 2026! 🇺🇸</li> 
+        <li><em>2026.04</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2601.07779">OS-Symphony</a> and <a href="https://arxiv.org/abs/2510.24411">OS-Sentinel</a>(<span style="color: red; font-style: italic;">Oral</span>) are accepted to ACL 2026! 🇺🇸</li> 
         <li><em>2026.03</em>: 🎉🤖 We present <a href="https://arxiv.org/abs/2603.19191">OS-Themis</a>, a scalable critic framework for generalist GUI rewards!</li>   
         <li><em>2026.02</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2512.16295">OS-Oracle</a> and <a href="https://arxiv.org/pdf/2507.19478?">MMBench-GUI</a> are accepted to CVPR 2026! 🇺🇸</li>   
         <li><em>2026.01</em>: 🎉🎉 Our paper <a href="https://arxiv.org/abs/2509.15221 ">ScaleCUA</a>(<span style="color: red; font-style: italic;">Oral</span>) and <a href="https://arxiv.org/abs/2505.19897">ScienceBoard</a> are accepted to ICLR 2026! 🇧🇷</li>
