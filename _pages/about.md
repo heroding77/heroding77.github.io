@@ -122,8 +122,8 @@ My research interests include:
 
 # 🔍 Services
 - I serve(d) as a reviewer / program committee member for the following conferences, journals:
-  - Conferences: SIGIR'25, ACL'25, SIGKDD'25, COLM'25, ICLR'26, ACL'26, EMNLP'26, ECCV'26.
-  - Journals: ACL Rolling Review(ARR), Frontiers of Computer Science.
+  - Conferences: SIGIR'25, ACL'25, SIGKDD'25, COLM'25, ICLR'26, ACL'26, ECCV'26, NeurIPS'26, EMNLP'26.
+  - Journals: ACL Rolling Review(ARR), Frontiers of Computer Science(FCS).
 
 
 <!--<div style="width: 200px; height: 200px; overflow: hidden;">
