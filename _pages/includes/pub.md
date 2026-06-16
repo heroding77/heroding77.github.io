@@ -114,6 +114,10 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 </div>
 </div>
 
+- `Preprint` [Skill is Not One-Size-Fits-All: Model-Aware Skill Alignment for LLM Agents](https://arxiv.org/pdf/2605.30723),[![](https://img.shields.io/github/stars/jianxiangyu/MASA_?style=social&label=Code+Stars)](https://github.com/jianxiangyu/MASA_)<br> Jianxiang Yu, Jiapeng Zhu, Bochen Lin, Qier Cui, **Zichen Ding**, Xiang Li.
+
+- `Preprint` [Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?](https://arxiv.org/pdf/2605.27881),[![](https://img.shields.io/github/stars/YiboZhao624/SearchAgentReview?style=social&label=Code+Stars)](https://github.com/YiboZhao624/SearchAgentReview)<br> Yibo Zhao, **Zichen Ding**, Jiayi Wu, Zun Wang, Xiang Li.
+
 - `Preprint` [OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis](https://arxiv.org/pdf/2604.15093),[![](https://img.shields.io/github/stars/njucckevin/OpenMobile-Code?style=social&label=Code+Stars)](https://github.com/njucckevin/OpenMobile-Code)<br> Kanzhi Cheng, Zehao Li, Zheng Ma, Nuo Chen, Jialin Cao, Qiushi Sun, **Zichen Ding**, Fangzhi Xu, Hang Yan, Jiajun Chen, Anh Tuan Luu, Jianbing Zhang, Lewei Lu, Dahua Lin.
 
 - `Preprint` [OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions](https://arxiv.org/pdf/2602.05843),[![](https://img.shields.io/github/stars/xufangzhi/Odyssey-Arena?style=social&label=Code+Stars)](https://github.com/xufangzhi/Odyssey-Arena)<br> Fangzhi Xu, Hang Yan, Qiushi Sun, Jinyang Wu, Zixian Huang, Muye Huang, Jingyang Gong, **Zichen Ding**, Kanzhi Cheng, Yian Wang, Xinyu Che, Zeyi Sun, Jian Zhang, Zhangyue Yin, Haoran Luo, Xuanjing Huang, Ben Kao, Jun Liu, Qika Lin.
