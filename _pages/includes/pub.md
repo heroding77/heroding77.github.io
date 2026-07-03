@@ -134,7 +134,7 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 
 - `ACL 2025` [Let's Be Self-generated via Step by Step: A Curriculum Learning Approach to Automated Reasoning with LLMs](https://arxiv.org/pdf/2410.21728), <span style="color:red">[CCF-A]</span> <br> Kangyang Luo, **Zichen Ding**, Zhenmin Weng, Lingfeng Qiao, Meng Zhao, Xiang Li, Di Yin, Jinlong Shu.
 
-- `IJCNLP-AACL 2025` [SEAGraph: Unveiling the Whole Story of Paper Review Comments](https://arxiv.org/abs/2412.11939),<br> Jianxiang Yu\*, Jiaqi Tan\*, **Zichen Ding**, Jiapeng Zhu, Jiahao Li, Yao Cheng, Qier Cui, Yunshi Lan, Yao Liu, Xiang Li
+- `IJCNLP-AACL 2025` [SEAGraph: Unveiling the Whole Story of Paper Review Comments](https://arxiv.org/abs/2412.11939), [![](https://img.shields.io/github/stars/ecnu-sea/SEAGraph?style=social&label=Code+Stars)](https://github.com/ecnu-sea/SEAGraph)<br> Jianxiang Yu\*, Jiaqi Tan\*, **Zichen Ding**, Jiapeng Zhu, Jiahao Li, Yao Cheng, Qier Cui, Yunshi Lan, Yao Liu, Xiang Li
 
 - `ICLR 2025 (Spotlight)` [OS-ATLAS: A Foundation Action Model For Generalist GUI Agents](https://arxiv.org/abs/2410.23218), <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Atlas?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Atlas)<br> Zhiyong Wu\*, Zhenyu Wu\*, Fangzhi Xu\*, Yian Wang\*, Qiushi Sun, Chengyou Jia, Kanzhi Cheng, **Zichen Ding**, Liheng Chen, Paul Pu Liang, Yu Qiao.
 
