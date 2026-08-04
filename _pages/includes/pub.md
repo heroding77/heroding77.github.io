@@ -114,6 +114,8 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 </div>
 </div>
 
+- `Preprint` [OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models](https://arxiv.org/abs/2607.28609),[![](https://img.shields.io/github/stars/OS-Copilot/OSReward?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OSReward)<br> Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, **Zichen Ding**, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong.
+
 - `Preprint` [Skill is Not One-Size-Fits-All: Model-Aware Skill Alignment for LLM Agents](https://arxiv.org/pdf/2605.30723),[![](https://img.shields.io/github/stars/jianxiangyu/MASA_?style=social&label=Code+Stars)](https://github.com/jianxiangyu/MASA_)<br> Jianxiang Yu, Jiapeng Zhu, Bochen Lin, Qier Cui, **Zichen Ding**, Xiang Li.
 
 - `Preprint` [Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?](https://arxiv.org/pdf/2605.27881),[![](https://img.shields.io/github/stars/YiboZhao624/SearchAgentReview?style=social&label=Code+Stars)](https://github.com/YiboZhao624/SearchAgentReview)<br> Yibo Zhao, **Zichen Ding**, Jiayi Wu, Zun Wang, Xiang Li.
