@@ -208,7 +208,7 @@ test("180 combinations of collection, topic, query and sort agree with publicati
   const s = setup(t);
   const names = {
     gui: "Computer use",
-    science: "Automated research",
+    science: "RSI",
     language: "Learning & reasoning",
     multimodal: "Multimodal",
   };
