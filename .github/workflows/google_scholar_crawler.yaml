@@ -1,7 +1,10 @@
 name: Get Citation Data
 
 on:
-  page_build:
+  push:
+    paths:
+      - "google_scholar_crawler/**"
+      - ".github/workflows/google_scholar_crawler.yaml"
   schedule:
     - cron: "0 8 * * *"
   workflow_dispatch:
