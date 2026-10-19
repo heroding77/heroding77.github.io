@@ -13,10 +13,10 @@
   <meta property="og:image" content="{{ '/images/person.jpg' | absolute_url }}">
   <meta name="theme-color" content="#f7f7f2">
   {% include favicons.html %}
-  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.data.brand.version }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.data.assets.css }}">
   <script>(() => { let theme; try { theme = localStorage.getItem('zd-theme'); } catch (_) {} document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();</script>
   <noscript><style>[data-older-news][hidden]{display:grid!important}.news-toggle,.publication-toolbar,.publication-filters,.loop-controls,.theme-toggle,.menu-toggle,.copy-citation,.email-copy,.research-note{display:none!important}@media(max-width:640px){.site-header{position:static}.mobile-nav[hidden]{display:flex!important;flex-wrap:wrap;gap:4px;padding:8px 14px}.mobile-nav a{padding:6px;font-size:11px}}</style></noscript>
-  <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/portfolio.js' | relative_url }}?v={{ site.data.assets.js }}" defer></script>
   {% include analytics.html %}
 </head>
 <body>
@@ -51,6 +51,7 @@
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
   <footer class="site-footer container"><a class="wordmark" href="#home" aria-label="heroding77, back to home">{% include brand-mark.html %}<span>heroding<span class="wordmark-number">77</span></span></a><p>© {{ site.time | date: '%Y' }} Zichen Ding <span>·</span> Built with curiosity.</p><a href="#home">Back to top ↑</a></footer>
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="figure-dialog-bar"><h2 id="figure-dialog-title"></h2><button class="figure-close" aria-label="Close figure preview">Close ×</button></div><div class="figure-canvas"><img class="figure-full" alt=""></div><a class="figure-paper-link" target="_blank" rel="noopener noreferrer">Read the paper ↗</a></dialog>
   <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

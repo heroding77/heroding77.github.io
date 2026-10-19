@@ -161,7 +161,7 @@
       paper,
       [
         $("h3", paper).textContent,
-        $(".paper-authors", paper).textContent,
+        $(".full-authors", paper).textContent,
         $(".venue", paper).textContent,
         $(".paper-category", paper).textContent,
         paper.dataset.year,
@@ -218,6 +218,14 @@
     moreButton.hidden = shown >= matches.length;
     moreButton.innerHTML = `Show ${Math.min(6, matches.length - shown)} more publications <span>↓</span>`;
   };
+  $$("[data-selected-link]").forEach(link => link.addEventListener("click", () => {
+    collection = "selected";
+    topic = "all";
+    search.value = "";
+    sort.value = "curated";
+    limit = 6;
+    filterPapers();
+  }));
   $$(".paper-tab").forEach((button) =>
     button.addEventListener("click", () => {
       collection = button.dataset.collection;
@@ -441,9 +449,11 @@
     new Intl.NumberFormat("en-US").format(value);
   if (scholar && citationTotal && updatedTime) {
     scholar.dataset.scholarState = "snapshot";
-    citationTotal.textContent = formatCitations(
-      Number(citationTotal.textContent),
-    );
+    const displayCitationCount = count => {
+      citationTotal.textContent = formatCitations(count);
+      $$("[data-citation-total]").forEach(element => { element.textContent = formatCitations(count); });
+    };
+    displayCitationCount(Number(citationTotal.textContent));
     const refreshScholar = async () => {
       for (const url of new Set([
         scholar.dataset.scholarPrimary,
@@ -475,9 +485,10 @@
           )
             continue;
           scholar.dataset.scholarState = "refreshed";
-          citationTotal.textContent = formatCitations(count);
+          displayCitationCount(count);
           updatedTime.textContent = date;
           updatedTime.dateTime = date;
+          $$("[data-scholar-date]").forEach(element => { element.textContent = date; element.dateTime = date; });
           $$(".show_paper_citations").forEach((element) => {
             const count =
               data.publications?.[element.getAttribute("data")]?.num_citations;
@@ -493,5 +504,27 @@
       }
     };
     refreshScholar();
+  }
+  // Every figure remains a normal image link when dialogs are unavailable.
+  const figureDialog = $(".figure-dialog");
+  if (figureDialog && typeof figureDialog.showModal === "function") {
+    let figureTrigger;
+    $$(".paper-image").forEach(link => link.addEventListener("click", event => {
+      event.preventDefault();
+      figureTrigger = link;
+      $("#figure-dialog-title").textContent = link.dataset.figureTitle;
+      const preview = $(".figure-full", figureDialog);
+      preview.src = link.href;
+      preview.alt = $("img", link).alt;
+      $(".figure-paper-link", figureDialog).href = link.dataset.paperUrl;
+      figureDialog.showModal();
+    }));
+    $(".figure-close", figureDialog).addEventListener("click", () => figureDialog.close());
+    figureDialog.addEventListener("click", event => {
+      if (event.target !== figureDialog) return;
+      const bounds = figureDialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) figureDialog.close();
+    });
+    figureDialog.addEventListener("close", () => figureTrigger?.focus({preventScroll:true}));
   }
 })();

@@ -1,62 +1,74 @@
 [
   {
-    "title": "OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents",
-    "url": "https://arxiv.org/pdf/2610.22234",
-    "venue": "Preprint",
-    "image": "images/previews/os_helix.webp",
-    "authors": "Bowen Yang*, Kaiming Jin*, Zichen Ding*, Zhenyu Wu, Zehao Li, Zhoumianze Liu, Kanzhi Cheng, Fangzhi Xu, Yanan Sun, Qiushi Sun, Yu Qiao",
+    "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data",
+    "url": "https://arxiv.org/pdf/2509.15221",
+    "venue": "ICLR 2026 (Oral)",
+    "image": "images/previews/scale_cua.webp",
+    "authors": "Zhaoyang Liu*, Jingjing Xie*, Zichen Ding*, Zehao Li*, Bowen Yang*, Zhenyu Wu*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Zeyue Tian, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.",
     "links": [
       {
         "label": "Paper",
-        "url": "https://arxiv.org/pdf/2610.22234"
+        "url": "https://arxiv.org/pdf/2509.15221"
       },
       {
         "label": "Code",
-        "url": "https://github.com/OS-Copilot/OS-Helix"
-      },
-      {
-        "label": "Project",
-        "url": "https://os-copilot.github.io/OS-Helix/"
-      }
-    ],
-    "summary": [
-      "Applications and authentic artifacts are composed into reproducible task environments.",
-      "Exploration proposes instructions and an independent evaluator checks the final state.",
-      "Filtered GUI/code trajectories initialize the policy before online RL with Step-balanced GSPO."
-    ],
-    "selected": true,
-    "id": "paper-1",
-    "year": 2026,
-    "category": "gui"
-  },
-  {
-    "title": "OS-Themis: A Scalable Critic Framework for Generalist GUI Rewards",
-    "url": "https://arxiv.org/abs/2603.19191",
-    "venue": "Preprint",
-    "image": "images/previews/os_themis.webp",
-    "authors": "Zehao Li, Zhenyu Wu, Yibo Zhao, Bowen Yang, Jingjing Xie, Zhaoyang Liu, Zhoumianze Liu, Kaiming Jin, Jianze Liang, Zonglin Li, Feng Wu, Bowen Zhou, Zun Wang, Zichen Ding✉",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/abs/2603.19191"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/OS-Copilot/OS-Themis"
+        "url": "https://github.com/OpenGVLab/ScaleCUA"
       },
       {
         "label": "Dataset & models",
-        "url": "https://huggingface.co/datasets/lizh1/OmniGUIRewardBench"
+        "url": "https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003"
       }
     ],
     "summary": [
-      "A scalable critic framework for generalist GUI rewards.",
-      "A holistic ORM benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms."
+      "The first open-source framework and dataset for truly cross-platform Computer Use Agents.",
+      "Achieve the SOTA results on MMBench-GUI, ScreenSpot-Pro, and WebArena-Lite-v2, etc.",
+      "Provide a comprehensive training recipe to advance computer-use agents."
     ],
     "selected": true,
-    "id": "paper-2",
+    "id": "paper-5",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "track": "conference",
+    "venue_name": "ICLR 2026",
+    "distinction": "Oral",
+    "ccf": "A",
+    "contribution": "Co-first author"
+  },
+  {
+    "title": "OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models",
+    "url": "https://arxiv.org/pdf/2512.16295",
+    "venue": "CVPR 2026",
+    "image": "images/previews/figure-paper-4.webp",
+    "authors": "Zhenyu Wu*, Jingjing Xie*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, Zichen Ding✉",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2512.16295"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/numbmelon/OS-Oracle"
+      },
+      {
+        "label": "Dataset & models",
+        "url": "https://huggingface.co/datasets/OS-Copilot"
+      }
+    ],
+    "summary": [
+      "A scalable data pipeline for synthesizing cross-platform GUI critic data.",
+      "Introducing an elaborate training recipe that integrates SFT with CP-GRPO.",
+      "A holistic benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms.",
+      "OS-Oracle-7B achieves the SOTA results on OS-Critic Bench and support the full CUA lifecycle."
+    ],
+    "selected": true,
+    "id": "paper-4",
+    "year": 2026,
+    "category": "gui",
+    "image_alt": "OS-Oracle — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "CVPR 2026",
+    "ccf": "A",
+    "contribution": "Corresponding author"
   },
   {
     "title": "OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent",
@@ -87,68 +99,11 @@
     "selected": true,
     "id": "paper-3",
     "year": 2026,
-    "category": "gui"
-  },
-  {
-    "title": "OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models",
-    "url": "https://arxiv.org/pdf/2512.16295",
-    "venue": "CVPR 2026",
-    "image": "images/previews/os_oracle.webp",
-    "authors": "Zhenyu Wu*, Jingjing Xie*, Zehao Li, Bowen Yang, Qiushi Sun, Zhaoyang Liu, Zhoumianze Liu, Yu Qiao, Xiangyu Yue, Zun Wang, Zichen Ding✉",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/pdf/2512.16295"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/numbmelon/OS-Oracle"
-      },
-      {
-        "label": "Dataset & models",
-        "url": "https://huggingface.co/datasets/OS-Copilot"
-      }
-    ],
-    "summary": [
-      "A scalable data pipeline for synthesizing cross-platform GUI critic data.",
-      "Introducing an elaborate training recipe that integrates SFT with CP-GRPO.",
-      "A holistic benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms.",
-      "OS-Oracle-7B achieves the SOTA results on OS-Critic Bench and support the full CUA lifecycle."
-    ],
-    "selected": true,
-    "id": "paper-4",
-    "year": 2026,
-    "category": "gui"
-  },
-  {
-    "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data",
-    "url": "https://arxiv.org/pdf/2509.15221",
-    "venue": "ICLR 2026 (Oral)",
-    "image": "images/previews/scale_cua.webp",
-    "authors": "Zhaoyang Liu*, Jingjing Xie*, Zichen Ding*, Zehao Li*, Bowen Yang*, Zhenyu Wu*, Xuehui Wang, Qiushi Sun, Shi Liu, Weiyun Wang, Shenglong Ye, Qingyun Li, Zeyue Tian, Gen Luo, Xiangyu Yue, Biqing Qi, Kai Chen, Bowen Zhou, Yu Qiao, Qifeng Chen, Wenhai Wang.",
-    "links": [
-      {
-        "label": "Paper",
-        "url": "https://arxiv.org/pdf/2509.15221"
-      },
-      {
-        "label": "Code",
-        "url": "https://github.com/OpenGVLab/ScaleCUA"
-      },
-      {
-        "label": "Dataset & models",
-        "url": "https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003"
-      }
-    ],
-    "summary": [
-      "The first open-source framework and dataset for truly cross-platform Computer Use Agents.",
-      "Achieve the SOTA results on MMBench-GUI, ScreenSpot-Pro, and WebArena-Lite-v2, etc.",
-      "Provide a comprehensive training recipe to advance computer-use agents."
-    ],
-    "selected": true,
-    "id": "paper-5",
-    "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "track": "conference",
+    "venue_name": "ACL 2026",
+    "ccf": "A",
+    "contribution": "Corresponding author"
   },
   {
     "title": "MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents",
@@ -173,13 +128,82 @@
     "selected": true,
     "id": "paper-6",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "track": "conference",
+    "venue_name": "CVPR 2026",
+    "ccf": "A",
+    "contribution": "Co-first author"
+  },
+  {
+    "title": "OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents",
+    "url": "https://arxiv.org/pdf/2610.22234",
+    "venue": "Preprint",
+    "image": "images/previews/os_helix.webp",
+    "authors": "Bowen Yang*, Kaiming Jin*, Zichen Ding*, Zhenyu Wu, Zehao Li, Zhoumianze Liu, Kanzhi Cheng, Fangzhi Xu, Yanan Sun, Qiushi Sun, Yu Qiao",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2610.22234"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/OS-Copilot/OS-Helix"
+      },
+      {
+        "label": "Project",
+        "url": "https://os-copilot.github.io/OS-Helix/"
+      }
+    ],
+    "summary": [
+      "Applications and authentic artifacts are composed into reproducible task environments.",
+      "Exploration proposes instructions and an independent evaluator checks the final state.",
+      "Filtered GUI/code trajectories initialize the policy before online RL with Step-balanced GSPO."
+    ],
+    "selected": true,
+    "id": "paper-1",
+    "year": 2026,
+    "category": "gui",
+    "track": "preprint",
+    "venue_name": "Preprint",
+    "contribution": "Co-first author"
+  },
+  {
+    "title": "OS-Themis: A Scalable Critic Framework for Generalist GUI Rewards",
+    "url": "https://arxiv.org/abs/2603.19191",
+    "venue": "Preprint",
+    "image": "images/previews/os_themis.webp",
+    "authors": "Zehao Li, Zhenyu Wu, Yibo Zhao, Bowen Yang, Jingjing Xie, Zhaoyang Liu, Zhoumianze Liu, Kaiming Jin, Jianze Liang, Zonglin Li, Feng Wu, Bowen Zhou, Zun Wang, Zichen Ding✉",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2603.19191"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/OS-Copilot/OS-Themis"
+      },
+      {
+        "label": "Dataset & models",
+        "url": "https://huggingface.co/datasets/lizh1/OmniGUIRewardBench"
+      }
+    ],
+    "summary": [
+      "A scalable critic framework for generalist GUI rewards.",
+      "A holistic ORM benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms."
+    ],
+    "selected": true,
+    "id": "paper-2",
+    "year": 2026,
+    "category": "gui",
+    "track": "preprint",
+    "venue_name": "Preprint",
+    "contribution": "Corresponding author"
   },
   {
     "title": "Breaking the Data Barrier – Building GUI Agents Through Task Generalization",
     "url": "https://arxiv.org/pdf/2504.10127",
     "venue": "COLM 2025",
-    "image": "images/previews/mid_training.webp",
+    "image": "images/previews/figure-paper-7.webp",
     "authors": "Junlei Zhang*, Zichen Ding*, Chang Ma, Zijie Chen, Qiushi Sun, Zhenzhong Lan, Junxian He.",
     "links": [
       {
@@ -198,13 +222,17 @@
     "selected": true,
     "id": "paper-7",
     "year": 2025,
-    "category": "gui"
+    "category": "gui",
+    "image_alt": "Breaking the Data Barrier – Building GUI Agents Through Task Generalization — Figure 1 from the paper",
+    "track": "conference",
+    "venue_name": "COLM 2025",
+    "contribution": "Co-first author"
   },
   {
     "title": "OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis",
     "url": "https://arxiv.org/abs/2412.19723",
     "venue": "ACL 2025",
-    "image": "images/previews/genesis.webp",
+    "image": "images/previews/figure-paper-8.webp",
     "authors": "Qiushi Sun*, Kanzhi Cheng*, Zichen Ding*, Chuanyang Jin*, Yian Wang, Fangzhi Xu, Zhenyu Wu, Chengyou Jia, Liheng Chen, Zhoumianze Liu, Ben Kao, Guohao Li, Junxian He, Yu Qiao, Zhiyong Wu.",
     "links": [
       {
@@ -227,12 +255,17 @@
     "selected": true,
     "id": "paper-8",
     "year": 2025,
-    "category": "gui"
+    "category": "gui",
+    "image_alt": "OS-Genesis — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "ACL 2025",
+    "ccf": "A",
+    "contribution": "Co-first author"
   },
   {
     "title": "Automated Peer Reviewing in Paper SEA: Standardization, Evaluation, and Analysis",
     "url": "https://arxiv.org/abs/2407.12857",
-    "venue": "EMNLP 2024",
+    "venue": "EMNLP 2024 · Findings",
     "image": "images/previews/SEA.webp",
     "authors": "Jianxiang Yu*, Zichen Ding*, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chenghua Gong, Long Zeng, Renjing Cui, Chengcheng Han, Qiushi Sun, Zhiyong Wu, Yunshi Lan, Xiang Li.",
     "links": [
@@ -249,11 +282,17 @@
         "url": "https://ecnu-sea.github.io/"
       }
     ],
-    "summary": ["An innovative framework for automating peer review."],
+    "summary": [
+      "An innovative framework for automating peer review."
+    ],
     "selected": true,
     "id": "paper-9",
     "year": 2024,
-    "category": "science"
+    "category": "science",
+    "venue_url": "https://aclanthology.org/2024.findings-emnlp.595/",
+    "track": "findings",
+    "venue_name": "EMNLP 2024 · Findings",
+    "contribution": "Co-first author"
   },
   {
     "title": "OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools",
@@ -274,7 +313,11 @@
     "selected": false,
     "id": "paper-10",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-10.webp",
+    "image_alt": "OpenMobile-2 — Figure 2 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
@@ -295,7 +338,11 @@
     "selected": false,
     "id": "paper-11",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-11.webp",
+    "image_alt": "OSReward — Figure 3 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "Skill is Not One-Size-Fits-All: Model-Aware Skill Alignment for LLM Agents",
@@ -316,7 +363,11 @@
     "selected": false,
     "id": "paper-12",
     "year": 2026,
-    "category": "language"
+    "category": "language",
+    "image": "images/previews/figure-paper-12.webp",
+    "image_alt": "Skill is Not One-Size-Fits-All — Figure 2 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "Retrieval, Reward, and Training Protocols: What Matters in Training Search Agents?",
@@ -337,7 +388,11 @@
     "selected": false,
     "id": "paper-13",
     "year": 2026,
-    "category": "language"
+    "category": "language",
+    "image": "images/previews/figure-paper-13.webp",
+    "image_alt": "Retrieval, Reward, and Training Protocols — Figure 1 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
@@ -358,7 +413,12 @@
     "selected": false,
     "id": "paper-14",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-14.webp",
+    "image_alt": "AgentCompass — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "EMNLP 2026",
+    "ccf": "B"
   },
   {
     "title": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
@@ -379,7 +439,13 @@
     "selected": false,
     "id": "paper-15",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-15.webp",
+    "image_alt": "MacAgentBench — Figure 1 from the paper",
+    "track": "conference",
+    "venue_name": "EMNLP 2026",
+    "distinction": "Oral",
+    "ccf": "B"
   },
   {
     "title": "OpenMobile: Building Open Mobile Agents with Task and Trajectory Synthesis",
@@ -400,7 +466,11 @@
     "selected": false,
     "id": "paper-16",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-16.webp",
+    "image_alt": "OpenMobile — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "COLM 2026"
   },
   {
     "title": "OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions",
@@ -421,7 +491,11 @@
     "selected": false,
     "id": "paper-17",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-17.webp",
+    "image_alt": "OdysseyArena — Figure 2 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents",
@@ -442,7 +516,12 @@
     "selected": false,
     "id": "paper-18",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-18.webp",
+    "image_alt": "TIDE — Figure 1 from the paper",
+    "track": "conference",
+    "venue_name": "EMNLP 2026",
+    "ccf": "B"
   },
   {
     "title": "GRACE: Reinforcement Learning for Grounded Response and Abstention under Contextual Evidence",
@@ -463,7 +542,11 @@
     "selected": false,
     "id": "paper-19",
     "year": 2026,
-    "category": "language"
+    "category": "language",
+    "image": "images/previews/figure-paper-19.webp",
+    "image_alt": "GRACE — Figure 2 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "OS-Sentinel: Towards Safety-Enhanced Mobile GUI Agents via Hybrid Validation in Realistic Workflows",
@@ -484,7 +567,13 @@
     "selected": false,
     "id": "paper-20",
     "year": 2026,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-20.webp",
+    "image_alt": "OS-Sentinel — Figure 4 from the paper",
+    "track": "conference",
+    "venue_name": "ACL 2026",
+    "distinction": "Oral",
+    "ccf": "A"
   },
   {
     "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility, Reasoning, and Efficiency",
@@ -505,7 +594,11 @@
     "selected": false,
     "id": "paper-21",
     "year": 2025,
-    "category": "multimodal"
+    "category": "multimodal",
+    "image": "images/previews/figure-paper-21.webp",
+    "image_alt": "InternVL3.5 — Figure 2 from the paper",
+    "track": "preprint",
+    "venue_name": "Preprint"
   },
   {
     "title": "ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows",
@@ -527,12 +620,17 @@
     "id": "paper-22",
     "year": 2026,
     "category": "science",
-    "note": "WCUA @ ICML 2025 · Oral"
+    "note": "WCUA @ ICML 2025 · Oral",
+    "image": "images/previews/figure-paper-22.webp",
+    "image_alt": "ScienceBoard — Figure 1 from the paper",
+    "track": "conference",
+    "venue_name": "ICLR 2026",
+    "ccf": "A"
   },
   {
     "title": "Let's Be Self-generated via Step by Step: A Curriculum Learning Approach to Automated Reasoning with LLMs",
     "url": "https://arxiv.org/pdf/2410.21728",
-    "venue": "ACL 2025",
+    "venue": "ACL 2025 · Findings",
     "authors": "Kangyang Luo, Zichen Ding, Zhenmin Weng, Lingfeng Qiao, Meng Zhao, Xiang Li, Di Yin, Jinlong Shu.",
     "links": [
       {
@@ -544,7 +642,12 @@
     "selected": false,
     "id": "paper-23",
     "year": 2025,
-    "category": "language"
+    "category": "language",
+    "image": "images/previews/figure-paper-23.webp",
+    "image_alt": "Let's Be Self-generated via Step by Step — Figure 2 from the paper",
+    "venue_url": "https://aclanthology.org/2025.findings-acl.795/",
+    "track": "findings",
+    "venue_name": "ACL 2025 · Findings"
   },
   {
     "title": "SEAGraph: Unveiling the Whole Story of Paper Review Comments",
@@ -565,7 +668,11 @@
     "selected": false,
     "id": "paper-24",
     "year": 2025,
-    "category": "science"
+    "category": "science",
+    "image": "images/previews/figure-paper-24.webp",
+    "image_alt": "SEAGraph — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "IJCNLP-AACL 2025"
   },
   {
     "title": "OS-ATLAS: A Foundation Action Model For Generalist GUI Agents",
@@ -586,7 +693,13 @@
     "selected": false,
     "id": "paper-25",
     "year": 2025,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-25.webp",
+    "image_alt": "OS-ATLAS — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "ICLR 2025",
+    "distinction": "Spotlight",
+    "ccf": "A"
   },
   {
     "title": "RELIEF: Reinforcement Learning Empowered Graph Feature Prompt Tuning",
@@ -607,7 +720,12 @@
     "selected": false,
     "id": "paper-26",
     "year": 2025,
-    "category": "language"
+    "category": "language",
+    "image": "images/previews/figure-paper-26.webp",
+    "image_alt": "RELIEF — Figure 2 from the paper",
+    "track": "conference",
+    "venue_name": "SIGKDD 2025",
+    "ccf": "A"
   },
   {
     "title": "OS-Copilot: Towards Generalist Computer Agents with Self-Improvement",
@@ -628,6 +746,40 @@
     "selected": false,
     "id": "paper-27",
     "year": 2024,
-    "category": "gui"
+    "category": "gui",
+    "image": "images/previews/figure-paper-27.webp",
+    "image_alt": "OS-Copilot — Figure 2 from the paper",
+    "track": "workshop",
+    "venue_name": "LLMAgents@ICLR 2024"
+  },
+  {
+    "id": "paper-28",
+    "title": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale",
+    "url": "https://arxiv.org/abs/2603.25040",
+    "venue": "Preprint",
+    "venue_name": "Preprint",
+    "track": "preprint",
+    "year": 2026,
+    "category": "multimodal",
+    "selected": false,
+    "authors": "Yicheng Zou, Dongsheng Zhu, Lin Zhu, Tong Zhu, Yunhua Zhou, Peiheng Zhou, Xinyu Zhou, Dongzhan Zhou, Zhiwang Zhou, Yuhao Zhou, Bowen Zhou, Zhanping Zhong, Zhijie Zhong, Haiteng Zhao, Penghao Zhao, Xiaomeng Zhao, Zhiyuan Zhao, Yechen Zhang, Jin Zhang, Wenwei Zhang, Hongjie Zhang, Zhuo Zhang, Wenlong Zhang, Bo Zhang, Chao Zhang, Chen Zhang, Yuhang Zang, Fei Yuan, Jiakang Yuan, Jiashuo Yu, Jinhui Yin, Haochen Ye, Qian Yao, Bowen Yang, Danni Yang, Kaichen Yang, Ziang Yan, Jun Xu, Yicheng Xu, Wanghan Xu, Xuenan Xu, Chao Xu, Ruiliang Xu, Shuhao Xing, Long Xing, Xinchen Xie, Ling-I Wu, Zijian Wu, Zhenyu Wu, Lijun Wu, Yue Wu, Jianyu Wu, Wen Wu, Fan Wu, Xilin Wei, Qi Wei, Bingli Wang, Rui Wang, Ziyi Wang, Zun Wang, Yi Wang, Haomin Wang, Yizhou Wang, Lintao Wang, Yiheng Wang, Longjiang Wang, Bin Wang, Jian Tong, Zhongbo Tian, Huanze Tang, Chen Tang, Shixiang Tang, Yu Sun, Qiushi Sun, Xuerui Su, Qisheng Su, Chenlin Su, Demin Song, Jin Shi, Fukai Shang, Yuchen Ren, Pengli Ren, Xiaoye Qu, Yuan Qu, Jiantao Qiu, Yu Qiao, Biqing Qi, Runyu Peng, Tianshuo Peng, Jiahui Peng, Qizhi Pei, Zhuoshi Pan, Linke Ouyang, Wenchang Ning, Yichuan Ma, Zerun Ma, Ningsheng Ma, Runyuan Ma, Chengqi Lyu, Haijun Lv, Han Lv, Lindong Lu, Kuikun Liu, Jiangning Liu, Yuhong Liu, Kai Liu, Hongwei Liu, Zhoumianze Liu, Mengjie Liu, Ziyu Liu, Wenran Liu, Yang Liu, Liwei Liu, Kaiwen Liu, Junyao Lin, Junming Lin, Tianyang Lin, Dahua Lin, Jianze Liang, Linyang Li, Peiji Li, Zonglin Li, Zehao Li, Pengze Li, Guoyan Li, Lingkai Kong, Linglin Jing, Zhenjiang Jin, Feifei Jiang, Qian Jiang, Junhao Huang, Zixian Huang, Haian Huang, Zhouqi Hua, Ermo Hua, Han Hu, Linfeng Hou, Yinan He, Conghui He, Tianyao He, Xu Guo, Qipeng Guo, Aijia Guo, Yuzhe Gu, Lixin Gu, Jingyang Gong, Qiming Ge, Jiaye Ge, Songyang Gao, Jianfei Gao, Xinyu Fang, Caihua fan, Yue Fan, Yanhui Duan, Zichen Ding, Shengyuan Ding, Ning Ding, Xuanlang Dai, Erfei Cui, Ganqu Cui, Pei Chu, Tao Chu, Guangran Cheng, Yu Cheng, Kai Chen, Yongkang Chen, Chiyu Chen, Guanzhou Chen, Qiaosheng Chen, Sitao Chen, Xin Chen, Haojiong Chen, Yicheng Chen, Weihan Cao, Yuhang Cao, Qinglong Cao, Lei Bai",
+    "authors_short": "Yicheng Zou, Dongsheng Zhu, Lin Zhu, Tong Zhu, Yunhua Zhou, Peiheng Zhou, Xinyu Zhou, Dongzhan Zhou, …, Yue Fan, Yanhui Duan, Zichen Ding, Shengyuan Ding, Ning Ding, …, Qinglong Cao, Lei Bai",
+    "author_count": 177,
+    "authors_url": "https://arxiv.org/abs/2603.25040",
+    "image": "images/previews/figure-paper-28.webp",
+    "image_alt": "Intern-S1-Pro — Figure 1: the SAGE framework",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/pdf/2603.25040"
+      },
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/internlm/Intern-S1-Pro"
+      }
+    ],
+    "summary": [
+      "A trillion-parameter scientific multimodal foundation model that brings together general reasoning, agent capabilities, and specialized scientific tasks."
+    ]
   }
 ]

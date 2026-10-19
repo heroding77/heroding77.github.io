@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "test": "node --test tests/*.test.cjs",
-    "build:brand": "node scripts/build-brand.cjs"
+    "build:brand": "node scripts/build-brand.cjs",
+    "build:assets": "node scripts/fingerprint-assets.cjs"
   },
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",

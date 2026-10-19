@@ -72,3 +72,23 @@ maskable icon with safe padding. The page header and footer use the same SVG pat
 Company marks: NaiveAI's icon comes from `https://naive.ai/icon.svg` (retrieved
 2026-10-20). Shanghai AI Laboratory uses the existing `images/logos/shailab-logo.svg`;
 CSS crops its full lockup to the symbol for legibility beside the company name.
+
+### Paper figures and metadata
+
+All 28 publications have covers. `_data/figure_sources.json` records the source
+PDF, page, figure number and verified crop for newly extracted or repaired figures.
+`scripts/extract-paper-figures.py` reproduces them with PyMuPDF and Pillow; PDF
+pages are rendered on an opaque white background. Image links progressively
+open a keyboard-accessible figure dialog, with a direct paper link.
+
+Conference badges follow the CCF 2026 seventh edition. Findings and workshop
+tracks retain their venue labels but do not inherit the main conference's CCF
+rank. The Intern-S1-Pro author excerpt preserves source order, includes Zichen
+Ding, and links to all 177 authors; the full list remains in the details.
+
+DUT's official seal is displayed from the university's VI reference sheet:
+https://www.dlut.edu.cn/xxgk/dxwh/xxVI.htm (retrieved 2026-10-20).
+
+After changing CSS or JavaScript, run `npm run build:assets` before the Jekyll
+build. The generated hashes prevent browsers from retaining an older stylesheet
+or script after a deployment.

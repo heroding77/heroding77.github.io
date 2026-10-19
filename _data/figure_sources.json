@@ -1,0 +1,332 @@
+[
+  {
+    "paper_id": "paper-4",
+    "source_url": "https://arxiv.org/pdf/2512.16295",
+    "page": 4,
+    "figure": 2,
+    "clip": [
+      78,
+      78,
+      534,
+      370
+    ],
+    "output": "images/previews/figure-paper-4.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-7",
+    "source_url": "https://arxiv.org/pdf/2504.10127",
+    "page": 2,
+    "figure": 1,
+    "clip": [
+      106,
+      78,
+      506,
+      309
+    ],
+    "output": "images/previews/figure-paper-7.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-8",
+    "source_url": "https://arxiv.org/abs/2412.19723",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      72,
+      78,
+      526,
+      328
+    ],
+    "output": "images/previews/figure-paper-8.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-10",
+    "source_url": "https://arxiv.org/pdf/2610.14157v1",
+    "page": 2,
+    "figure": 2,
+    "clip": [
+      108,
+      91,
+      505,
+      250
+    ],
+    "output": "images/previews/figure-paper-10.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-11",
+    "source_url": "https://arxiv.org/abs/2607.28609",
+    "page": 5,
+    "figure": 3,
+    "clip": [
+      61,
+      439,
+      551,
+      569
+    ],
+    "output": "images/previews/figure-paper-11.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-12",
+    "source_url": "https://arxiv.org/pdf/2605.30723",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      69,
+      72,
+      528,
+      285
+    ],
+    "output": "images/previews/figure-paper-12.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-13",
+    "source_url": "https://arxiv.org/pdf/2605.27881",
+    "page": 4,
+    "figure": 1,
+    "clip": [
+      70,
+      65,
+      290,
+      264
+    ],
+    "output": "images/previews/figure-paper-13.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-14",
+    "source_url": "https://arxiv.org/pdf/2607.13705",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      61,
+      83,
+      535,
+      287
+    ],
+    "output": "images/previews/figure-paper-14.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-15",
+    "source_url": "https://arxiv.org/pdf/2606.22557",
+    "page": 2,
+    "figure": 1,
+    "clip": [
+      72,
+      72,
+      525,
+      330
+    ],
+    "output": "images/previews/figure-paper-15.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-16",
+    "source_url": "https://arxiv.org/pdf/2604.15093",
+    "page": 4,
+    "figure": 2,
+    "clip": [
+      107,
+      88,
+      506,
+      227
+    ],
+    "output": "images/previews/figure-paper-16.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-17",
+    "source_url": "https://arxiv.org/pdf/2602.05843",
+    "page": 4,
+    "figure": 2,
+    "clip": [
+      108,
+      71,
+      505,
+      274
+    ],
+    "output": "images/previews/figure-paper-17.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-18",
+    "source_url": "https://arxiv.org/pdf/2602.02196",
+    "page": 2,
+    "figure": 1,
+    "clip": [
+      77,
+      68,
+      518,
+      248
+    ],
+    "output": "images/previews/figure-paper-18.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-19",
+    "source_url": "https://arxiv.org/pdf/2601.04525",
+    "page": 4,
+    "figure": 2,
+    "clip": [
+      69,
+      69,
+      526,
+      295
+    ],
+    "output": "images/previews/figure-paper-19.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-20",
+    "source_url": "https://arxiv.org/abs/2510.24411",
+    "page": 5,
+    "figure": 4,
+    "clip": [
+      70,
+      71,
+      526,
+      212
+    ],
+    "output": "images/previews/figure-paper-20.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-21",
+    "source_url": "https://arxiv.org/abs/2508.18265",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      85,
+      72,
+      528,
+      212
+    ],
+    "output": "images/previews/figure-paper-21.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-22",
+    "source_url": "https://arxiv.org/abs/2505.19897",
+    "page": 2,
+    "figure": 1,
+    "clip": [
+      120,
+      79,
+      485,
+      295
+    ],
+    "output": "images/previews/figure-paper-22.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-23",
+    "source_url": "https://arxiv.org/pdf/2410.21728",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      108,
+      69,
+      505,
+      326
+    ],
+    "output": "images/previews/figure-paper-23.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-24",
+    "source_url": "https://arxiv.org/abs/2412.11939",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      70,
+      70,
+      526,
+      306
+    ],
+    "output": "images/previews/figure-paper-24.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-25",
+    "source_url": "https://arxiv.org/abs/2410.23218",
+    "page": 4,
+    "figure": 2,
+    "clip": [
+      108,
+      78,
+      505,
+      225
+    ],
+    "output": "images/previews/figure-paper-25.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-26",
+    "source_url": "https://arxiv.org/abs/2408.03195",
+    "page": 5,
+    "figure": 2,
+    "clip": [
+      53,
+      69,
+      560,
+      268
+    ],
+    "output": "images/previews/figure-paper-26.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-27",
+    "source_url": "https://arxiv.org/pdf/2402.07456",
+    "page": 3,
+    "figure": 2,
+    "clip": [
+      107,
+      79,
+      505,
+      190
+    ],
+    "output": "images/previews/figure-paper-27.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  },
+  {
+    "paper_id": "paper-28",
+    "source_url": "https://arxiv.org/pdf/2603.25040",
+    "page": 2,
+    "figure": 1,
+    "clip": [
+      115.0,
+      94.0,
+      475.0,
+      218.0
+    ],
+    "output": "images/previews/figure-paper-28.webp",
+    "background": "white",
+    "retrieved": "2026-10-20"
+  }
+]

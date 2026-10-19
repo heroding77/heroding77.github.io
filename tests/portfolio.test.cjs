@@ -106,6 +106,10 @@ function setup(t, options = {}) {
   [...d.querySelectorAll("main > section[id]")].forEach((section, i) => {
     section.getBoundingClientRect = () => ({ top: i * 1000 - w.scrollY });
   });
+  if (options.dialogs) {
+    w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
+    w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event("close")); };
+  }
   w.eval(script);
   t.after(() => {
     assert.deepEqual(errors, [], "No uncaught UI error");
@@ -167,7 +171,7 @@ test("build: IDs, asset paths, links, safe markup, redirects and metadata", (t) 
   for (const el of d.querySelectorAll("[aria-controls]"))
     assert.ok(d.getElementById(el.getAttribute("aria-controls")));
   for (const el of d.querySelectorAll(
-    'img,script[src],link[rel="stylesheet"]',
+    'img[src],script[src],link[rel="stylesheet"]',
   )) {
     const url = el.getAttribute("src") || el.getAttribute("href");
     if (url.startsWith("/"))
@@ -444,6 +448,8 @@ test("Scholar keeps the dated snapshot offline and falls back from CDN to the or
   });
   await flush();
   assert.equal(s.$("#total_cit").textContent, "3,000");
+  assert.equal(s.$("[data-citation-total]").textContent, "3,000");
+  assert.equal(s.$("[data-scholar-date]").dateTime, "2026-10-20");
   assert.equal(s.$("#scholar-updated").dateTime, "2026-10-20");
   assert.match(s.requests[0], /cdn\.jsdelivr\.net/);
   assert.match(s.requests[1], /raw\.githubusercontent\.com/);
@@ -546,4 +552,63 @@ test("brand geometry, favicon sizes and manifest resolve consistently", () => {
   assert.equal(ico.readUInt16LE(4), 4);
   assert.deepEqual([0, 1, 2, 3].map(i => ico[6 + i * 16]), [16, 32, 48, 64]);
   assert.deepEqual(ico, readFileSync(resolve(site, "images/favicon.ico")));
+});
+
+test("all papers have figures, venue tiers reflect tracks, and contribution marks stay inside the name highlight", t => {
+  const s = setup(t);
+  assert.equal(s.d.querySelectorAll('.paper-image img').length, data.length);
+  for (const p of data) {
+    const card = s.$('#' + p.id);
+    const ownName = card.querySelector('.paper-authors strong').textContent;
+    const mark = p.authors.includes('Zichen Ding*') ? '*' : p.authors.includes('Zichen Ding✉') ? '✉' : '';
+    assert.equal(ownName, 'Zichen Ding' + mark);
+    assert.equal(!!card.querySelector('.ccf-badge'), !!p.ccf);
+    if (p.ccf) assert.equal(p.track, 'conference');
+    if (p.track === 'findings' || p.track === 'workshop') assert.equal(p.ccf, undefined);
+  }
+  const longPaper = s.$('#paper-28 .paper-authors');
+  assert.match(longPaper.textContent, /…/);
+  assert.ok(longPaper.textContent.length < 400);
+  assert.equal(longPaper.querySelector('strong').textContent, 'Zichen Ding');
+  s.search('Intern-S1-Pro');
+  assert.deepEqual(s.ids(), ['paper-28']);
+});
+
+test("figure preview opens the matching image, preserves the paper link, closes and restores focus", t => {
+  const s = setup(t, { dialogs: true });
+  const figure = s.$('#paper-4 .paper-image');
+  figure.focus(); figure.click();
+  const dialog = s.$('.figure-dialog');
+  assert.equal(dialog.open, true);
+  assert.equal(s.$('.figure-full').src, figure.href);
+  assert.equal(s.$('.figure-paper-link').href, figure.dataset.paperUrl);
+  assert.equal(s.$('#figure-dialog-title').textContent, figure.dataset.figureTitle);
+  s.click('.figure-close');
+  assert.equal(dialog.open, false);
+  assert.equal(s.d.activeElement, figure);
+});
+
+
+test("the resume overview reflects source contributions and restores selected work from any filter", t => {
+  const s = setup(t);
+  const selected = data.filter(p => p.selected);
+  assert.equal(selected.filter(p => p.contribution === 'Co-first author').length, 6);
+  assert.equal(selected.filter(p => p.contribution === 'Corresponding author').length, 3);
+  assert.equal(s.$('[data-selected-link] strong')?.textContent || s.$('.hero-evidence strong').textContent, '9');
+  s.search('not-a-paper');
+  s.click('.hero-buttons [data-selected-link]');
+  assert.equal(s.$('#paper-search').value, '');
+  assert.deepEqual(s.ids(), selected.slice(0, 6).map(p => p.id));
+  assert.equal(s.$('.paper-tab.active').dataset.collection, 'selected');
+});
+
+test("repeated filtering does not multiply the selected-work click handler", t => {
+  const s = setup(t);
+  for (let index = 0; index < 30; index++) s.search(index % 2 ? '2026' : 'agent');
+  const list = s.$('.paper-list');
+  const append = list.append;
+  let appended = 0;
+  list.append = function (...nodes) { appended += nodes.length; return append.apply(this, nodes); };
+  s.click('.hero-buttons [data-selected-link]');
+  assert.equal(appended, data.filter(p => p.selected).length, 'One click performs one bibliography render');
 });
