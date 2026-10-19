@@ -2729,3 +2729,20 @@ summary {
   .about-resume .background-card { gap: 14px; }
   .about-section .recognition-grid { grid-template-columns: 1fr; gap: 32px; }
 }
+
+/* Research writing complements the bibliography without changing paper counts. */
+.research-blog { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 30px; padding: 28px; margin: 10px 0 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.research-blog[hidden] { display: none; }
+.research-blog .paper-body { min-width: 0; }
+.research-blog .paper-image { align-self: center; }
+.research-blog .paper-meta time { font-size: 11px; color: var(--muted); }
+.research-blog .venue--blog { background: var(--accent); color: var(--bg); }
+.blog-byline { color: var(--muted); font-size: 12px; margin: 9px 0; }
+.research-blog .paper-links { margin-top: 17px; }
+@media (max-width: 900px) {
+  .research-blog { grid-template-columns: 190px minmax(0, 1fr); gap: 22px; padding: 22px; }
+}
+@media (max-width: 640px) {
+  .research-blog { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+  .research-blog .paper-image { width: 100%; }
+}

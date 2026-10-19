@@ -556,7 +556,7 @@ test("brand geometry, favicon sizes and manifest resolve consistently", () => {
 
 test("all papers have figures, venue tiers reflect tracks, and contribution marks stay inside the name highlight", t => {
   const s = setup(t);
-  assert.equal(s.d.querySelectorAll('.paper-image img').length, data.length);
+  assert.equal(s.d.querySelectorAll('.paper-card .paper-image img').length, data.length);
   for (const p of data) {
     const card = s.$('#' + p.id);
     const ownName = card.querySelector('.paper-authors strong').textContent;
@@ -611,4 +611,33 @@ test("repeated filtering does not multiply the selected-work click handler", t =
   list.append = function (...nodes) { appended += nodes.length; return append.apply(this, nodes); };
   s.click('.hero-buttons [data-selected-link]');
   assert.equal(appended, data.filter(p => p.selected).length, 'One click performs one bibliography render');
+});
+
+test("RSI research blog filters and searches independently of the academic bibliography", t => {
+  const s = setup(t, { dialogs: true });
+  const blog = s.$('.research-blog');
+  assert.ok(blog.hidden, 'Selected papers retain their contribution-based scope');
+  assert.equal(s.d.querySelectorAll('.paper-card').length, data.length);
+  s.click('[data-research="science"]');
+  assert.equal(blog.hidden, false);
+  assert.match(blog.textContent, /Naive-N0.5-Flash/);
+  assert.match(blog.textContent, /NaiveAI Team/);
+  assert.equal(blog.querySelector('time').dateTime, '2026-09-27');
+  s.click('[data-topic="gui"]');
+  assert.equal(blog.hidden, true);
+  s.click('[data-topic="all"]');
+  s.search('Naive-N0.5-Flash');
+  assert.equal(blog.hidden, false);
+  assert.deepEqual(s.ids(), []);
+  assert.equal(s.$('.empty-state').hidden, true);
+  assert.equal(s.$('.result-count').textContent, '1 research blog');
+  assert.equal(s.$('.load-papers').hidden, true);
+  blog.querySelector('.paper-image').click();
+  assert.equal(s.$('.figure-paper-link').href, 'https://naive.ai/en/research/');
+  assert.equal(s.$('.figure-paper-link').textContent, 'Read the blog ↗');
+  s.click('.figure-close');
+  s.click('.hero-buttons [data-selected-link]');
+  assert.equal(blog.hidden, true);
+  s.$('#paper-5 .paper-image').click();
+  assert.equal(s.$('.figure-paper-link').textContent, 'Read the paper ↗');
 });

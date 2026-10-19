@@ -18,3 +18,8 @@ Checked on 2026-10-20.
   retained at his original position. The full list is available in the details.
 - DUT seal source:
   https://www.dlut.edu.cn/xxgk/dxwh/xxVI.htm
+
+- Research blog (kept separate from academic publication counts):
+  NaiveAI Team, “Naive-N0.5-Flash: Building Frontier AI with AI,” September 27, 2026.
+  https://naive.ai/en/research/
+  Original opaque cover: https://naive.ai/assets/research/naive-n05-flash-home-cover.webp

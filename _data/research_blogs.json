@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Naive-N0.5-Flash: Building Frontier AI with AI",
+    "url": "https://naive.ai/en/research/",
+    "date": "2026-09-27",
+    "author": "NaiveAI Team",
+    "category": "science",
+    "image": "/images/previews/naive-n05-flash.webp",
+    "image_alt": "Naive-N0.5-Flash hybrid SWA\u2013DSA architecture",
+    "summary": "AI-centered R&D for a 309B MoE model: architecture, training, and inference developed through human-guided research loops.",
+    "image_source": "https://naive.ai/assets/research/naive-n05-flash-home-cover.webp"
+  }
+]

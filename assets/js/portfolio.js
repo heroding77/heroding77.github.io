@@ -150,6 +150,8 @@
   // One filter state drives tabs, search, sorting, topic links, and pagination.
   const papers = $$(".paper-card");
   const paperList = $(".paper-list");
+  const researchBlogs = $$(".research-blog");
+  const blogSearchIndex = new Map(researchBlogs.map(blog => [blog, blog.textContent.toLocaleLowerCase()]));
   const search = $("#paper-search");
   const sort = $("#paper-sort");
   const moreButton = $(".load-papers");
@@ -185,6 +187,12 @@
             .split(/\s+/)
             .every((word) => searchIndex.get(paper).includes(word))),
     );
+    const matchingBlogs = researchBlogs.filter(blog =>
+      (searching || collection === "all") &&
+      (topic === "all" || blog.dataset.category === topic) &&
+      (!query || query.split(/\s+/).every(word => blogSearchIndex.get(blog).includes(word)))
+    );
+    researchBlogs.forEach(blog => { blog.hidden = !matchingBlogs.includes(blog); });
     matches.sort((a, b) => {
       const delta = Number(b.dataset.year) - Number(a.dataset.year);
       return sort.value === "newest"
@@ -212,9 +220,12 @@
       button.setAttribute("aria-pressed", String(active));
     });
     const shown = Math.min(limit, matches.length);
-    $(".result-count").textContent =
-      `${shown} / ${matches.length} ${matches.length === 1 ? "paper" : "papers"}`;
-    $(".empty-state").hidden = matches.length > 0;
+    const paperCount = `${shown} / ${matches.length} ${matches.length === 1 ? "paper" : "papers"}`;
+    const blogCount = `${matchingBlogs.length} research ${matchingBlogs.length === 1 ? "blog" : "blogs"}`;
+    $(".result-count").textContent = matchingBlogs.length
+      ? (matches.length ? `${paperCount} · ${blogCount}` : blogCount)
+      : paperCount;
+    $(".empty-state").hidden = matches.length > 0 || matchingBlogs.length > 0;
     moreButton.hidden = shown >= matches.length;
     moreButton.innerHTML = `Show ${Math.min(6, matches.length - shown)} more publications <span>↓</span>`;
   };
@@ -516,7 +527,9 @@
       const preview = $(".figure-full", figureDialog);
       preview.src = link.href;
       preview.alt = $("img", link).alt;
-      $(".figure-paper-link", figureDialog).href = link.dataset.paperUrl;
+      const sourceLink = $(".figure-paper-link", figureDialog);
+      sourceLink.href = link.dataset.paperUrl;
+      sourceLink.textContent = link.dataset.figureKind === "blog" ? "Read the blog ↗" : "Read the paper ↗";
       figureDialog.showModal();
     }));
     $(".figure-close", figureDialog).addEventListener("click", () => figureDialog.close());
