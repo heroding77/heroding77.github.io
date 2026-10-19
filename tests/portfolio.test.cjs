@@ -641,3 +641,62 @@ test("RSI research blog filters and searches independently of the academic bibli
   s.$('#paper-5 .paper-image').click();
   assert.equal(s.$('.figure-paper-link').textContent, 'Read the paper ↗');
 });
+
+test("all matching papers can be revealed from the topic toolbar without losing the category", t => {
+  const s = setup(t);
+  s.click('[data-topic="gui"]');
+  assert.equal(s.$('#paper-20').hidden, true, 'OS-Sentinel initially falls beyond the first page');
+  assert.equal(s.$('.show-all-papers').hidden, false);
+  s.click('.show-all-papers');
+  assert.deepEqual(s.ids(), data.filter(p => p.category === 'gui').map(p => p.id));
+  assert.equal(s.$('#paper-20').hidden, false);
+  assert.equal(s.$('.show-all-papers').hidden, true);
+  assert.equal(s.$('.load-papers').hidden, true);
+  assert.equal(s.$('.topic-chip.active').dataset.topic, 'gui');
+  assert.equal(s.d.activeElement, s.$('.paper-card:not([hidden]) h3 a'));
+  s.click('[data-topic="language"]');
+  assert.equal(s.$('#paper-17').hidden, false, 'OdysseyArena belongs to learning and reasoning');
+  s.click('[data-topic="gui"]');
+  assert.equal(s.$('#paper-17').hidden, true);
+});
+
+test("search includes visible presentation, contribution and ranking badges", t => {
+  const s = setup(t);
+  for (const query of ['Oral', 'CCF-A', 'Corresponding author']) {
+    s.search(query); s.loadAll();
+    const expected = data.filter(p => [p.venue, p.distinction || '', p.note || '', p.ccf ? `CCF-${p.ccf}` : '', p.contribution || ''].join(' ').toLowerCase().includes(query.toLowerCase()));
+    assert.deepEqual(s.ids(), expected.map(p => p.id), query);
+    assert.equal(s.$('.empty-state').hidden, true);
+  }
+});
+
+test("blog-only and empty searches hide irrelevant academic footnotes", t => {
+  const s = setup(t);
+  s.search('Naive-N0.5-Flash');
+  assert.equal(s.$('.ranking-note').hidden, true);
+  assert.equal(s.$('.papers-footer').hidden, true);
+  assert.equal(s.$('.empty-state').hidden, true);
+  s.search('never-match');
+  assert.equal(s.$('.empty-state').hidden, false);
+  assert.equal(s.$('.show-all-papers').hidden, true);
+  s.search('ScaleCUA');
+  assert.equal(s.$('.ranking-note').hidden, false);
+  assert.equal(s.$('.papers-footer').hidden, false);
+});
+
+test("figure dialogs preserve modified image links and keep the search shortcut outside the modal", t => {
+  const s = setup(t, { dialogs: true });
+  const image = s.$('#paper-5 .paper-image');
+  let prevented;
+  image.addEventListener('click', event => { prevented = event.defaultPrevented; event.preventDefault(); });
+  image.dispatchEvent(new s.w.MouseEvent('click', { bubbles: true, cancelable: true, ctrlKey: true }));
+  assert.equal(prevented, false, 'Modifier clicks remain ordinary new-tab image links');
+  assert.equal(s.$('.figure-dialog').open, false);
+  image.click();
+  assert.equal(s.$('.figure-dialog').open, true);
+  s.$('.figure-close').focus();
+  const before = s.scrolls.length;
+  s.$('.figure-close').dispatchEvent(new s.w.KeyboardEvent('keydown', { key: '/', bubbles: true, cancelable: true }));
+  assert.equal(s.scrolls.length, before);
+  assert.equal(s.d.activeElement, s.$('.figure-close'));
+});

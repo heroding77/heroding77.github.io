@@ -15,7 +15,7 @@
   {% include favicons.html %}
   <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v={{ site.data.assets.css }}">
   <script>(() => { let theme; try { theme = localStorage.getItem('zd-theme'); } catch (_) {} document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();</script>
-  <noscript><style>[data-older-news][hidden]{display:grid!important}.news-toggle,.publication-toolbar,.publication-filters,.loop-controls,.theme-toggle,.menu-toggle,.copy-citation,.email-copy,.research-note{display:none!important}@media(max-width:640px){.site-header{position:static}.mobile-nav[hidden]{display:flex!important;flex-wrap:wrap;gap:4px;padding:8px 14px}.mobile-nav a{padding:6px;font-size:11px}}</style></noscript>
+  <noscript><style>.research-blog[hidden]{display:grid!important}[data-older-news][hidden]{display:grid!important}.news-toggle,.publication-toolbar,.publication-filters,.loop-controls,.theme-toggle,.menu-toggle,.copy-citation,.email-copy,.research-note{display:none!important}@media(max-width:640px){.site-header{position:static}.mobile-nav[hidden]{display:flex!important;flex-wrap:wrap;gap:4px;padding:8px 14px}.mobile-nav a{padding:6px;font-size:11px}}</style></noscript>
   <script src="{{ '/assets/js/portfolio.js' | relative_url }}?v={{ site.data.assets.js }}" defer></script>
   {% include analytics.html %}
 </head>

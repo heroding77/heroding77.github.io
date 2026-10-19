@@ -7,3 +7,6 @@ vendor/
 .jekyll-metadata
 .sass-cache/
 node_modules/
+
+# Python development test caches
+__pycache__/

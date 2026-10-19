@@ -4,7 +4,7 @@
   --surface: #fff;
   --surface-soft: #efefe8;
   --ink: #202820;
-  --muted: #6d756b;
+  --muted: #60695e;
   --line: #dddfd5;
   --accent: #355edc;
   --accent-soft: #e9edfc;
@@ -1498,7 +1498,7 @@ summary {
 }
 .contact-inner .eyebrow {
   font-size: 9px;
-  color: #5c7156;
+  color: #4e6148;
   letter-spacing: 1.3px;
 }
 .contact-inner h2 {
@@ -1510,7 +1510,7 @@ summary {
 }
 .contact-inner p {
   font-size: 12px;
-  color: #65765e;
+  color: #51614c;
   margin-top: 20px;
 }
 .contact-actions {
@@ -2740,4 +2740,13 @@ summary {
 .research-blog .paper-links { margin-top: 17px; }
 @media (max-width: 640px) {
   .research-blog .paper-image { width: 100%; }
+}
+
+/* Preserve readable secondary text and predictable wrapping across screen sizes. */
+.hero-statement .focus-term { white-space: nowrap; }
+.publication-results { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+.publication-results .result-count { margin: 0; width: auto; }
+.show-all-papers { color: var(--accent); font-size: 11px; padding: 5px 0; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) {
+  .publication-results { width: 100%; margin-top: 8px; justify-content: space-between; }
 }

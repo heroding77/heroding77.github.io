@@ -33,7 +33,7 @@ The existing lockfile uses Bundler 2.2.19. If Bundler reports a version mismatch
 - `assets/js/portfolio.js`: interactive agent sketch, publication explorer, theme preference, clipboard actions, and navigation.
 - `images/previews/`: compressed publication and portrait previews. Original full-resolution images remain in `images/`.
 
-Publication topics are `gui`, `science`, `language`, and `multimodal`. Text search includes all 27 publications, even when the Selected collection is active. Selecting a research direction also opens the complete matching bibliography. “Copy reference” copies a plain-text reference based on the saved metadata.
+Publication topics are `gui`, `science`, `language`, and `multimodal`. Text search includes the full bibliography, even when the Selected collection is active. Selecting a research direction also opens the complete matching bibliography. “Copy reference” copies a plain-text reference based on the saved metadata.
 
 ## Interaction & accessibility
 
@@ -44,7 +44,7 @@ Publication topics are `gui`, `science`, `language`, and `multimodal`. Text sear
 - Keyboard focus, a skip link, reduced-motion preferences, mobile navigation, empty search results, no-JavaScript reading, and print styles are supported.
 - All academic content is rendered by Jekyll. Essential content and native disclosure elements remain available without JavaScript.
 
-The Google Scholar crawler still publishes `gs_data.json` and `gs_data_shieldsio.json` on `google-scholar-stats`. The page refreshes citations from the existing CDN endpoint, with the raw GitHub endpoint as a fallback. `_data/scholar.json` holds a verified, dated snapshot for visitors who cannot reach either endpoint; update it from the same Scholar account, retaining its original `updated` date. The displayed date is the crawler's data date, not the visitor's current date. The workflow uses an isolated Python environment and updates the statistics branch without force-pushing. GitHub Pages can continue building from `main` using the repository's existing Pages configuration. Local edits do not publish until committed and pushed.
+The Google Scholar crawler still publishes `gs_data.json` and `gs_data_shieldsio.json` on `google-scholar-stats`. The page refreshes citations from the existing CDN endpoint, with the raw GitHub endpoint as a fallback. `_data/scholar.json` holds a verified, dated snapshot for visitors who cannot reach either endpoint; update it from the same Scholar account, retaining its original `updated` date. The displayed date is the crawler's data date, not the visitor's current date. The workflow uses an isolated Python environment, pins the BibTeX parser API required by scholarly, and updates the statistics branch without force-pushing. It runs daily, on crawler source changes, or manually; ordinary page builds do not trigger extra Scholar requests. Fetches have a three-minute upper bound, validate the author and count before writing results, and date successful retrievals in Asia/Shanghai. GitHub Pages can continue building from `main` using the repository's existing Pages configuration. Local edits do not publish until committed and pushed.
 
 ## Credits
 
@@ -58,6 +58,7 @@ Node.js 18+ is only needed for development tests, not for serving or publishing 
 npm ci
 bundle exec jekyll build
 npm test
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 The tests exercise search / topic / collection / sort combinations, complete pagination, direct paper links, keyboard navigation, color preferences, reduced motion, denied storage and clipboard access, and Scholar endpoint / snapshot fallbacks. To test the production Pages build, also run `JEKYLL_ENV=production bundle exec jekyll build --safe`.

@@ -155,6 +155,7 @@
   const search = $("#paper-search");
   const sort = $("#paper-sort");
   const moreButton = $(".load-papers");
+  const showAllButton = $(".show-all-papers");
   let collection = "selected";
   let topic = "all";
   let limit = 6;
@@ -164,8 +165,7 @@
       [
         $("h3", paper).textContent,
         $(".full-authors", paper).textContent,
-        $(".venue", paper).textContent,
-        $(".paper-category", paper).textContent,
+        ...$$(".paper-meta > *", paper).map(label => label.textContent),
         paper.dataset.year,
       ]
         .join(" ")
@@ -227,6 +227,10 @@
       : paperCount;
     $(".empty-state").hidden = matches.length > 0 || matchingBlogs.length > 0;
     moreButton.hidden = shown >= matches.length;
+    showAllButton.hidden = moreButton.hidden;
+    showAllButton.setAttribute("aria-label", `Show all ${matches.length} matching papers`);
+    $(".ranking-note").hidden = !matches.some(paper => $(".ccf-badge", paper));
+    $(".papers-footer").hidden = matches.length === 0;
     moreButton.innerHTML = `Show ${Math.min(6, matches.length - shown)} more publications <span>↓</span>`;
   };
   $$("[data-selected-link]").forEach(link => link.addEventListener("click", () => {
@@ -271,6 +275,12 @@
     limit = 6;
     filterPapers();
   });
+  showAllButton.addEventListener("click", () => {
+    limit = papers.length;
+    filterPapers();
+    const first = $$(".paper-card", paperList).find(paper => !paper.hidden);
+    $("h3 a", first)?.focus({ preventScroll: true });
+  });
   moreButton.addEventListener("click", () => {
     const previouslyVisible = papers.filter((paper) => !paper.hidden);
     limit += 6;
@@ -300,6 +310,7 @@
   document.addEventListener("keydown", (event) => {
     if (
       event.key !== "/" ||
+      $(".figure-dialog")?.open ||
       event.metaKey ||
       event.ctrlKey ||
       event.altKey ||
@@ -521,6 +532,7 @@
   if (figureDialog && typeof figureDialog.showModal === "function") {
     let figureTrigger;
     $$(".paper-image").forEach(link => link.addEventListener("click", event => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       figureTrigger = link;
       $("#figure-dialog-title").textContent = link.dataset.figureTitle;
