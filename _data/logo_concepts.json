@@ -1,0 +1,47 @@
+[
+  {
+    "id": "01",
+    "title": "双 77 · Forward",
+    "name": "77 FORWARD",
+    "file": "01-77-forward.png",
+    "tag": "ID 辨识度最高",
+    "description": "用两组 7 形成向前的结构，负空间里藏着 H。蓝色呼应主页，适合长期作为个人标识。",
+    "idea": "数字 77 / 向前 / 负空间 H"
+  },
+  {
+    "id": "02",
+    "title": "光标 H · Intent",
+    "name": "INTENT TO ACTION",
+    "file": "02-cursor-h.png",
+    "tag": "最贴近你的研究",
+    "description": "把 h 与光标结合，直接呼应 Computer-Using Agent。绿色比较克制，带一点交互的轻盈感。",
+    "idea": "字母 h / 光标 / 意图变成行动"
+  },
+  {
+    "id": "03",
+    "title": "轨迹 H · Trajectory",
+    "name": "OPEN TRAJECTORY",
+    "file": "03-orbit-h.png",
+    "tag": "更轻松、亲和",
+    "description": "用一条开放路径和目标点形成 h，蓝橙组合更活泼，适合希望主页更有温度的方向。",
+    "idea": "路径 / 目标点 / 探索"
+  },
+  {
+    "id": "04",
+    "title": "丁字印记 · Imprint",
+    "name": "PERSONAL IMPRINT",
+    "file": "04-ding-seal.png",
+    "tag": "最有个人意味",
+    "description": "从你的姓氏「丁」提炼几何笔画。朱红色有温度，也更接近一个属于你自己的签名印记。",
+    "idea": "丁 / 姓氏 / 现代印记"
+  },
+  {
+    "id": "05",
+    "title": "Hero 羽翼 · Quiet Hero",
+    "name": "QUIET HERO",
+    "file": "05-hero-wing.png",
+    "tag": "延续旧 logo 的线索",
+    "description": "保留原图里 Hero 与羽翼的概念，去掉复杂头盔和细碎羽毛，用更干净的几何轮廓表达。",
+    "idea": "Hero / 羽翼 / 几何 H"
+  }
+]

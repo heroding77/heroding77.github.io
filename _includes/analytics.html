@@ -1,4 +1,5 @@
-{% if page.analytics != false %}
+{% assign analytics_id = site.google_analytics_id | default: '' | strip %}
+{% if page.analytics != false and analytics_id != '' %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>

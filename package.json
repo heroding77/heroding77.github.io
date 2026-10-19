@@ -1,0 +1,15 @@
+{
+  "name": "zichen-ding-portfolio",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build:brand": "node scripts/build-brand.cjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "jsdom": "26.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

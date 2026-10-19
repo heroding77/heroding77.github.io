@@ -7,7 +7,9 @@
 
 # Site Settings
 title                    : "Zichen Ding"
-description              : "A Researcher in OpenGVLab, Shanghai AI Laboratory."
+description              : "Researcher at NaiveAI, exploring computer-using agents, automated research, and multimodal intelligence."
+url                      : "https://heroding77.github.io"
+baseurl                  : ""
 repository               : "heroding77/heroding77.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -87,6 +89,11 @@ exclude:
   - gulpfile.js
   - log
   - node_modules
+  - tests
+  - scripts
+  - package-lock.json
+  - run_server.sh
+  - _pages/includes
   - package.json
   - tmp
   - vendor
