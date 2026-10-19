@@ -56,7 +56,7 @@ My research interests include:
 </style>  
 <div class="scrollable-area">  
     <ul>
-        <li><em>2026.10</em>: 🎉🤖 We present <a href="https://arxiv.org/pdf/2610.22234">OS-Helix</a>, unifying GUI interaction and code execution in native CUAs!</li>             
+        <li><em>2026.10</em>: 🎉🤖 We present <a href="https://arxiv.org/pdf/2610.22234">OS-Helix</a>, an end-to-end trained CUA that treats GUI interaction and code execution as actions of one policy.</li>             
         <li><em>2026.08</em>: 🥂🥂 Three paper are accepted to EMNLP 2026! 🇭🇺</li> 
         <li><em>2026.07</em>: 🎉🎉 Our paper <a href="https://arxiv.org/pdf/2604.15093">OpenMobile</a> is accepted to COLM 2026! 🇺🇸</li> 
         <li><em>2026.04</em>: 🥂🥂 Our paper <a href="https://arxiv.org/pdf/2601.07779">OS-Symphony</a> and <a href="https://arxiv.org/abs/2510.24411">OS-Sentinel</a>(<span style="color: red; font-style: italic;">Oral</span>) are accepted to ACL 2026! 🇺🇸</li> 
