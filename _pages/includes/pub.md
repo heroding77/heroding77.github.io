@@ -8,9 +8,10 @@ Bowen Yang\*, Kaiming Jin\*, **Zichen Ding\***, Zhenyu Wu, Zehao Li, Zhoumianze 
   
 (\* means equal contributions, ✉ means corresponding author.)
 
-- Check code, OGRBench at [**Our Github**](https://github.com/OS-Copilot/OS-Themis) and [**Our HuggingFace**](https://huggingface.co/datasets/lizh1/OmniGUIRewardBench). 🌐
-- A scalable critic framework for generalist GUI rewards. ⭐
-- A holistic ORM benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms. ⚖️
+- Check project at [**Our HomePage**](https://os-copilot.github.io/OS-Helix/). 🌐
+- Applications and authentic artifacts are composed into reproducible task environments. 🛰️
+- Exploration proposes instructions and an independent evaluator checks the final state. ⚖️
+- Filtered GUI/code trajectories initialize the policy before online RL with Step-balanced GSPO. ⭐
 
 </div>
 </div>
