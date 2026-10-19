@@ -1,6 +1,21 @@
 
 # 📝 Selected Publications  <a href='https://scholar.google.com/citations?user=N4NNsRMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_helix.png' alt="sym" width="98%"></div></div>
+<div class='paper-box-text' markdown="1">
+[OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents 🔥🔥](https://arxiv.org/pdf/2610.22234) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Helix?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Helix) \\
+Bowen Yang\*, Kaiming Jin\*, **Zichen Ding\***, Zhenyu Wu, Zehao Li, Zhoumianze Liu, Kanzhi Cheng, Fangzhi Xu, Yanan Sun, Qiushi Sun, Yu Qiao
+  
+(\* means equal contributions, ✉ means corresponding author.)
+
+- Check code, OGRBench at [**Our Github**](https://github.com/OS-Copilot/OS-Themis) and [**Our HuggingFace**](https://huggingface.co/datasets/lizh1/OmniGUIRewardBench). 🌐
+- A scalable critic framework for generalist GUI rewards. ⭐
+- A holistic ORM benchmark for evaluating GUI critic across Mobile, Web, and Desktop platforms. ⚖️
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/publications/os_themis.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
 [OS-Themis: A Scalable Critic Framework for Generalist GUI Rewards 🔥🔥](https://arxiv.org/abs/2603.19191) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Themis?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Themis) \\
@@ -17,7 +32,7 @@ Zehao Li, Zhenyu Wu, Yibo Zhao, Bowen Yang, Jingjing Xie, Zhaoyang Liu, Zhoumian
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='images/publications/os_symphony.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
-[OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent 🔥🔥](https://arxiv.org/pdf/2601.07779) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Symphony?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Symphony) \\
+[OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent](https://arxiv.org/pdf/2601.07779) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Symphony?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Symphony) \\
 Bowen Yang\*, Kaiming Jin\*, Zhenyu Wu, Zhaoyang Liu, Qiushi Sun, Zehao Li, JingJing Xie, Zhoumianze Liu, Fangzhi Xu, Kanzhi Cheng, Qingyun Li, Yian Wang, Yu Qiao, Zun Wang, **Zichen Ding**✉
   
 - Check code, demos at [**Our Github**](https://github.com/OS-Copilot/OS-Symphony) and [**Our Website**](https://os-copilot.github.io/OS-Symphony/). 🌐
@@ -113,6 +128,8 @@ Jianxiang Yu\*, **Zichen Ding\***, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chengh
 
 </div>
 </div>
+
+- `Preprint` [OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools](https://arxiv.org/pdf/2610.14157v1),[![](https://img.shields.io/github/stars/OpenMobile2/OpenMobile2-Code?style=social&label=Code+Stars)](https://github.com/OpenMobile2/OpenMobile2-Code)<br> Chenyang Yan, Yingying Zhang, Kanzhi Cheng, Qiushi Sun, Zhengyuan Pan, Zheng Ma, Hang Yan, Yian Wang, Nuo Chen, Jialin Cao, Xingdong Gong, Wenpo Song, Han Chen, **Zichen Ding**, Fangzhi Xu, Shujian Huang, Xinyu Dai, Yichen Liu, Tiankuo Yao, Bo Wang, Ben Kao, Jianbing Zhang, Lewei Lu, Dahua Lin.
 
 - `Preprint` [OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models](https://arxiv.org/abs/2607.28609),[![](https://img.shields.io/github/stars/OS-Copilot/OSReward?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OSReward)<br> Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, **Zichen Ding**, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong.
 
