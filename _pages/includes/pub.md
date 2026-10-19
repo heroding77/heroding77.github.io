@@ -33,7 +33,7 @@ Zehao Li, Zhenyu Wu, Yibo Zhao, Bowen Yang, Jingjing Xie, Zhaoyang Liu, Zhoumian
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='images/publications/os_symphony.png' alt="sym" width="98%"></div></div>
 <div class='paper-box-text' markdown="1">
-[OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent](https://arxiv.org/pdf/2601.07779) [![](https://img.shields.io/github/stars/OS-Copilot/OS-Symphony?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Symphony) \\
+[OS-SYMPHONY: A Holistic Framework for Robust and Generalist Computer-Using Agent](https://arxiv.org/pdf/2601.07779) <span style="color:red">[CCF-A]</span> [![](https://img.shields.io/github/stars/OS-Copilot/OS-Symphony?style=social&label=Code+Stars)](https://github.com/OS-Copilot/OS-Symphony) \\
 Bowen Yang\*, Kaiming Jin\*, Zhenyu Wu, Zhaoyang Liu, Qiushi Sun, Zehao Li, JingJing Xie, Zhoumianze Liu, Fangzhi Xu, Kanzhi Cheng, Qingyun Li, Yian Wang, Yu Qiao, Zun Wang, **Zichen Ding**✉
   
 - Check code, demos at [**Our Github**](https://github.com/OS-Copilot/OS-Symphony) and [**Our Website**](https://os-copilot.github.io/OS-Symphony/). 🌐
