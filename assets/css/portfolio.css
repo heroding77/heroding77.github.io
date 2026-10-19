@@ -2698,3 +2698,34 @@ summary {
   .publication-intro { font-size: 12px; margin-top: 0; }
   .about-section { padding-top: 60px; }
 }
+/* About follows a vertical resume: portrait aside, then biography and grouped entries. */
+.about-resume { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 72px; align-items: start; }
+.about-resume > .about-identity { position: sticky; top: 112px; }
+.about-resume-content { min-width: 0; }
+.about-resume .about-introduction .about-lead { margin-top: 13px; font-size: 23px; }
+.about-resume .about-introduction p { max-width: 750px; }
+.about-resume .background-columns { display: block; margin-top: 38px; }
+.about-resume .background-group + .background-group { margin-top: 38px; }
+.about-resume .background-heading { padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 22px; font-size: 16px; }
+.about-resume .background-card { padding: 0; gap: 18px; border: 0; border-radius: 0; background: none; }
+.about-resume .background-card + .background-card { margin-top: 25px; padding-top: 25px; border-top: 1px solid var(--line); }
+.about-resume .institution-topline { justify-content: flex-start; gap: 14px; }
+.about-resume .institution-content h4 { font-size: 17px; }
+.about-resume .institution-role { font-size: 14px; }
+.about-resume .institution-content time { font-size: 12px; }
+.about-resume .institution-description { font-size: 13px; }
+.about-resume .appointment + .appointment { border: 0; padding-top: 5px; margin-top: 9px; }
+.about-section .mini-heading { font-size: 11px; font-weight: 500; letter-spacing: 1px; color: var(--ink); }
+.about-section .reveal-ready { opacity: 1; transform: none; transition: none; }
+@media (max-width: 1050px) {
+  .about-resume { grid-template-columns: 210px minmax(0, 1fr); gap: 42px; }
+}
+@media (max-width: 700px) {
+  .about-resume { grid-template-columns: 1fr; gap: 30px; }
+  .about-resume > .about-identity { position: static; }
+  .about-resume .about-introduction .about-lead { font-size: 20px; }
+  .about-resume .background-columns { margin-top: 30px; }
+  .about-resume .institution-content h4 { font-size: 15px; }
+  .about-resume .background-card { gap: 14px; }
+  .about-section .recognition-grid { grid-template-columns: 1fr; gap: 32px; }
+}

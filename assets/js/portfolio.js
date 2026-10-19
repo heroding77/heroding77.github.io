@@ -433,7 +433,7 @@
       );
       $$(
         ".section-heading, .research-grid, .news-intro, .about-grid, .recognition-grid, .contact-inner",
-      ).forEach((element) => {
+      ).filter(element => !element.closest("#about")).forEach((element) => {
         element.classList.add("reveal-ready");
         revealObserver.observe(element);
       });

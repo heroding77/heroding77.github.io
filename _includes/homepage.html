@@ -65,13 +65,14 @@
 <section class="news-section section-pad" id="news" aria-labelledby="news-title"><div class="container news-layout"><div class="news-intro"><span class="eyebrow section-label">03 / FIELD NOTES</span><h2 id="news-title">A few recent <br><em>milestones.</em></h2><p>New releases, accepted papers,<br>and moments along the way.</p><span class="news-decor" aria-hidden="true">↗</span></div><div class="news-feed">{% for item in site.data.news %}<div class="news-item" {% if forloop.index > 5 %}data-older-news hidden{% endif %}><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div>{{ item.body }}</div></div>{% endfor %}<button class="news-toggle text-link" aria-expanded="false">View the archive <span>+ {{ site.data.news.size | minus: 5 }} updates</span></button></div></div></section>
 
 <section class="about-section section-pad container" id="about" aria-labelledby="about-title">
-  <div class="section-heading"><div><span class="eyebrow section-label">04 / A LITTLE BACKGROUND</span><h2 id="about-title">About <em>& experience.</em></h2></div></div>
-  <div class="about-overview">
+  <div class="section-heading"><div><span class="eyebrow section-label">04 / A LITTLE BACKGROUND</span><h2 id="about-title">The person behind<br><em>the papers.</em></h2></div></div>
+  <div class="about-resume">
     <div class="about-identity">
       <div class="portrait-wrap"><img src="{{ '/images/previews/portrait.webp' | relative_url }}" alt="Portrait of Zichen Ding" loading="lazy" width="600" height="800"></div>
       <div class="identity-name">Zichen Ding <span>丁子晨</span></div>
       <div class="profile-socials"><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Scholar ↗</a><a href="mailto:{{ site.author.email }}">Email ↗</a></div>
     </div>
+    <div class="about-resume-content">
     <div class="about-introduction">
       <span class="eyebrow about-kicker">RESEARCHER · SHANGHAI, CHINA</span>
       <p class="about-lead">I’m a researcher at <a href="https://naive.ai/en/" target="_blank" rel="noopener noreferrer" class="affiliation">{% include company-logo.html company="naiveai" %}<span>NaiveAI</span></a>, exploring how intelligent agents can interact with the digital world.</p>
@@ -79,7 +80,6 @@
       <p>Previously, I worked with <a href="https://whai362.github.io/" target="_blank" rel="noopener noreferrer">Dr. Wenhai Wang</a> and <a href="https://lividwo.github.io/zywu.github.io/" target="_blank" rel="noopener noreferrer">Dr. Zhiyong Wu</a> at <a class="affiliation" href="https://www.shlab.org.cn/" target="_blank" rel="noopener noreferrer">{% include company-logo.html company="shailab" %}<span>Shanghai AI Laboratory</span></a>.</p>
       <div class="about-interests"><span>Computer use</span><span>Automated research</span><span>Multimodal AI</span></div>
     </div>
-  </div>
   <div class="background-columns">
     <div class="background-group"><h3 class="background-heading"><span>01</span> Research experience</h3>
       <div class="background-card current-position">
@@ -100,6 +100,8 @@
         <div class="institution-logo institution-logo--dlut"><img src="{{ '/images/logos/dlut-identity.png' | relative_url }}" alt="Dalian University of Technology logo" width="585" height="601" loading="lazy"></div>
         <div class="institution-content"><h4><a href="https://www.dlut.edu.cn/" target="_blank" rel="noopener noreferrer">Dalian University of Technology ↗</a></h4><p class="institution-role">B.Eng. · Software Engineering</p><time>2018.09 — 2022.06</time></div>
       </div>
+    </div>
+  </div>
     </div>
   </div>
   <div class="recognition-grid"><div><h3 class="mini-heading">HONORS & AWARDS</h3><div class="honor-highlight"><span>2025</span><p>Outstanding Master’s Thesis Award<small>East China Normal University</small></p><span class="honor-star">✳</span></div><details class="background-details"><summary>More honors & competitions <span>+</span></summary><ul><li><time>2025.04</time> Outstanding Graduate · East China Normal University</li><li><time>2022.06</time> Outstanding Graduate · Dalian University of Technology</li><li><time>2018–21</time> Outstanding Student · Dalian University of Technology</li><li><time>2021.01</time> First Place · IBM Modern Architecture Technology Elite Contest, China</li><li><time>2021.01</time> Fifth Place · Microsoft Imagine Cup, China</li><li><time>2021.06</time> First Prize · National MathorCup College Mathematical Modeling Challenge</li><li><time>2021.07</time> Second Prize · National China Collegiate Computer Design Contest</li><li><time>2021.03</time> Bronze Medal · National College Algorithm Design and Programming Challenge</li></ul></details><details class="background-details"><summary>Scholarships <span>+</span></summary><ul><li><time>2022–25</time> Graduate Academic Scholarship · ECNU</li><li><time>2018–22</time> Academic Excellence Scholarship · DUT</li><li><time>2019–21</time> Science and Technology Innovation Scholarship · DUT</li><li><time>2021.11</time> Panasonic Scholarship · DUT</li></ul></details></div><div class="service-block"><h3 class="mini-heading">GIVING BACK TO RESEARCH</h3><p>I serve as a reviewer / program committee member for:</p><div class="service-tags"><span>ICLR ’26 ’27</span><span>NeurIPS ’26</span><span>ECCV ’26</span><span>ACL ’25 ’26</span><span>EMNLP ’26</span><span>COLM ’25</span><span>SIGKDD ’25</span><span>SIGIR ’25</span></div><p class="journal-note">Journals: ACL Rolling Review (ARR) · Frontiers of Computer Science (FCS)</p></div></div>
