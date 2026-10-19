@@ -1032,7 +1032,7 @@ summary {
   margin-left: auto;
   color: var(--muted);
 }
-.paper-card {
+.paper-card, .research-blog {
   display: grid;
   grid-template-columns: 255px 1fr;
   gap: 30px;
@@ -1673,7 +1673,7 @@ summary {
   .research-card p {
     font-size: 10px;
   }
-  .paper-card {
+  .paper-card, .research-blog {
     grid-template-columns: 220px 1fr;
     gap: 25px;
   }
@@ -1832,7 +1832,7 @@ summary {
   .section-heading > p {
     font-size: 11px;
   }
-  .paper-card {
+  .paper-card, .research-blog {
     grid-template-columns: 190px 1fr;
     gap: 24px;
   }
@@ -2144,7 +2144,7 @@ summary {
     margin-top: 8px;
     font-size: 9px;
   }
-  .paper-card {
+  .paper-card, .research-blog {
     grid-template-columns: 1fr;
     gap: 19px;
     padding-block: 25px;
@@ -2440,7 +2440,7 @@ summary {
   .research-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .paper-card {
+  .paper-card, .research-blog {
     break-inside: avoid;
   }
   .news-item[hidden] {
@@ -2731,7 +2731,6 @@ summary {
 }
 
 /* Research writing complements the bibliography without changing paper counts. */
-.research-blog { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 30px; padding: 28px; margin: 10px 0 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 .research-blog[hidden] { display: none; }
 .research-blog .paper-body { min-width: 0; }
 .research-blog .paper-image { align-self: center; }
@@ -2739,10 +2738,6 @@ summary {
 .research-blog .venue--blog { background: var(--accent); color: var(--bg); }
 .blog-byline { color: var(--muted); font-size: 12px; margin: 9px 0; }
 .research-blog .paper-links { margin-top: 17px; }
-@media (max-width: 900px) {
-  .research-blog { grid-template-columns: 190px minmax(0, 1fr); gap: 22px; padding: 22px; }
-}
 @media (max-width: 640px) {
-  .research-blog { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
   .research-blog .paper-image { width: 100%; }
 }
