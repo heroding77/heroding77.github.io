@@ -33,7 +33,7 @@ The existing lockfile uses Bundler 2.2.19. If Bundler reports a version mismatch
 - `assets/js/portfolio.js`: interactive agent sketch, publication explorer, theme preference, clipboard actions, and navigation.
 - `images/previews/`: compressed publication and portrait previews. Original full-resolution images remain in `images/`.
 
-Publication topics are `gui`, `science`, `language`, and `multimodal`. Text search includes the full bibliography, even when the Selected collection is active. Selecting a research direction also opens the complete matching bibliography. “Copy reference” copies a plain-text reference based on the saved metadata.
+Publication topics are `gui`, `science`, `language`, and `multimodal`. Selected defaults to newest first, using arXiv first-release month and submission sequence. All publications defaults to accepted papers first (including Findings and workshop tracks), with newer venue years first and release order within each year; preprints follow in release order. Manual sort preferences are retained separately for each collection. Text search includes the full bibliography, even when the Selected collection is active. Selecting a research direction also opens the complete matching bibliography. “Copy reference” copies a plain-text reference based on the saved metadata.
 
 ## Interaction & accessibility
 

@@ -157,6 +157,15 @@
   const moreButton = $(".load-papers");
   const showAllButton = $(".show-all-papers");
   let collection = "selected";
+  const collectionSort = { selected: "newest", all: "accepted" };
+  // arXiv identifiers encode first-release month and sequence, not the revision date.
+  const releaseOrder = new Map(papers.map(paper => {
+    const id = $("h3 a", paper).href.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4})\.(\d{4,5})/);
+    return [paper, id ? [Number(`20${id[1]}`), Number(id[2])] : [Number(paper.dataset.year) * 100, 0]];
+  }));
+  const newestFirst = (a, b) => releaseOrder.get(b)[0] - releaseOrder.get(a)[0]
+    || releaseOrder.get(b)[1] - releaseOrder.get(a)[1]
+    || Number(a.dataset.order) - Number(b.dataset.order);
   let topic = "all";
   let limit = 6;
   const searchIndex = new Map(
@@ -176,6 +185,8 @@
     const query = search.value.trim().toLocaleLowerCase();
     // Searching the page searches the complete bibliography, including non-selected work.
     const searching = Boolean(query);
+    const effectiveCollection = searching ? "all" : collection;
+    sort.value = collectionSort[effectiveCollection];
     const matches = papers.filter(
       (paper) =>
         (searching ||
@@ -194,12 +205,15 @@
     );
     researchBlogs.forEach(blog => { blog.hidden = !matchingBlogs.includes(blog); });
     matches.sort((a, b) => {
-      const delta = Number(b.dataset.year) - Number(a.dataset.year);
-      return sort.value === "newest"
-        ? delta || Number(a.dataset.order) - Number(b.dataset.order)
-        : sort.value === "oldest"
-          ? -delta || Number(a.dataset.order) - Number(b.dataset.order)
-          : Number(a.dataset.order) - Number(b.dataset.order);
+      if (sort.value === "oldest") return newestFirst(b, a);
+      if (sort.value === "accepted") {
+        const aAccepted = a.dataset.track !== "preprint";
+        const bAccepted = b.dataset.track !== "preprint";
+        return Number(bAccepted) - Number(aAccepted)
+          || (aAccepted && bAccepted ? Number(b.dataset.year) - Number(a.dataset.year) : 0)
+          || newestFirst(a, b);
+      }
+      return newestFirst(a, b);
     });
     papers.forEach((paper) => {
       paper.hidden = true;
@@ -237,7 +251,7 @@
     collection = "selected";
     topic = "all";
     search.value = "";
-    sort.value = "curated";
+    collectionSort.selected = "newest";
     limit = 6;
     filterPapers();
   }));
@@ -272,6 +286,7 @@
     filterPapers();
   });
   sort.addEventListener("change", () => {
+    collectionSort[search.value.trim() ? "all" : collection] = sort.value;
     limit = 6;
     filterPapers();
   });
@@ -303,7 +318,8 @@
     topic = "all";
     limit = 6;
     search.value = "";
-    sort.value = "curated";
+    collectionSort.selected = "newest";
+    collectionSort.all = "accepted";
     filterPapers();
     search.focus({ preventScroll: true });
   });

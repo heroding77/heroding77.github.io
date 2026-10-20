@@ -11,6 +11,23 @@ const data = JSON.parse(readFileSync(resolve(root, "_data/publications.json")));
 const snapshot = JSON.parse(readFileSync(resolve(root, "_data/scholar.json")));
 const flush = () => new Promise((resolve) => setImmediate(resolve));
 
+// Expected orders use bibliography metadata, including first-release month/sequence.
+function orderedPapers(rows, mode = "accepted") {
+  const chronological = (a, b) => {
+    const id = p => p.url.match(/(\d{4}\.\d{4,5})/)[1];
+    return id(b).localeCompare(id(a));
+  };
+  return [...rows].sort((a, b) => {
+    if (mode === "newest") return chronological(a, b);
+    if (mode === "oldest") return chronological(b, a);
+    const aAccepted = a.track !== "preprint", bAccepted = b.track !== "preprint";
+    return Number(bAccepted) - Number(aAccepted)
+      || (aAccepted && bAccepted ? b.year - a.year : 0)
+      || chronological(a, b);
+  });
+}
+
+
 function setup(t, options = {}) {
   const errors = [];
   const dom = new JSDOM(html, {
@@ -222,7 +239,7 @@ test("180 combinations of collection, topic, query and sort agree with publicati
         "COLM",
         "never-match",
       ])
-        for (const sort of ["curated", "newest", "oldest"]) {
+        for (const sort of ["accepted", "newest", "oldest"]) {
           s.click(".reset-filters");
           s.click(`[data-collection="${collection}"]`);
           s.click(`[data-topic="${topic}"]`);
@@ -244,13 +261,10 @@ test("180 combinations of collection, topic, query and sort agree with publicati
                     .includes(word),
                 ),
           );
-          if (sort !== "curated")
-            expected.sort((a, b) =>
-              sort === "newest" ? b.year - a.year : a.year - b.year,
-            );
+          const ordered = orderedPapers(expected, sort);
           assert.deepEqual(
             s.ids(),
-            expected.map((p) => p.id),
+            ordered.map((p) => p.id),
             `${collection}/${topic}/${query}/${sort}`,
           );
           assert.equal(s.$(".empty-state").hidden, !!expected.length);
@@ -269,7 +283,7 @@ test("searching selected work broadens temporarily; clearing it restores selecti
   s.loadAll();
   assert.deepEqual(
     s.ids(),
-    data.filter((p) => p.selected).map((p) => p.id),
+    orderedPapers(data.filter((p) => p.selected), "newest").map((p) => p.id),
   );
 });
 
@@ -279,8 +293,8 @@ test("pagination reaches every paper once, and reset clears all filter state", (
   assert.equal(s.ids().length, 6);
   s.click(".load-papers");
   assert.equal(s.ids().length, 12);
-  assert.equal(s.d.activeElement.closest(".paper-card").id, "paper-7");
-  assert.equal(s.scrolls.at(-1).id, "paper-7");
+  assert.equal(s.d.activeElement.closest(".paper-card").id, orderedPapers(data)[6].id);
+  assert.equal(s.scrolls.at(-1).id, orderedPapers(data)[6].id);
   s.loadAll();
   assert.equal(new Set(s.ids()).size, data.length);
   s.search("absent-paper");
@@ -293,7 +307,7 @@ test("research cards and direct publication links reveal work outside the select
   const s = setup(t);
   s.search("absent-paper");
   s.click('[data-research="science"]');
-  assert.deepEqual(s.ids(), ["paper-9", "paper-22", "paper-24"]);
+  assert.deepEqual(s.ids(), ["paper-22", "paper-24", "paper-9"]);
   const deep = setup(t, { hash: "#paper-27" });
   assert.equal(deep.$("#paper-27").hidden, false);
   assert.equal(deep.scrolls.at(-1).id, "paper-27");
@@ -598,7 +612,7 @@ test("the resume overview reflects source contributions and restores selected wo
   s.search('not-a-paper');
   s.click('.hero-buttons [data-selected-link]');
   assert.equal(s.$('#paper-search').value, '');
-  assert.deepEqual(s.ids(), selected.slice(0, 6).map(p => p.id));
+  assert.deepEqual(s.ids(), orderedPapers(selected, "newest").slice(0, 6).map(p => p.id));
   assert.equal(s.$('.paper-tab.active').dataset.collection, 'selected');
 });
 
@@ -648,7 +662,7 @@ test("all matching papers can be revealed from the topic toolbar without losing 
   assert.equal(s.$('#paper-20').hidden, true, 'OS-Sentinel initially falls beyond the first page');
   assert.equal(s.$('.show-all-papers').hidden, false);
   s.click('.show-all-papers');
-  assert.deepEqual(s.ids(), data.filter(p => p.category === 'gui').map(p => p.id));
+  assert.deepEqual(s.ids(), orderedPapers(data.filter(p => p.category === 'gui')).map(p => p.id));
   assert.equal(s.$('#paper-20').hidden, false);
   assert.equal(s.$('.show-all-papers').hidden, true);
   assert.equal(s.$('.load-papers').hidden, true);
@@ -665,7 +679,7 @@ test("search includes visible presentation, contribution and ranking badges", t 
   for (const query of ['Oral', 'CCF-A', 'Corresponding author']) {
     s.search(query); s.loadAll();
     const expected = data.filter(p => [p.venue, p.distinction || '', p.note || '', p.ccf ? `CCF-${p.ccf}` : '', p.contribution || ''].join(' ').toLowerCase().includes(query.toLowerCase()));
-    assert.deepEqual(s.ids(), expected.map(p => p.id), query);
+    assert.deepEqual(s.ids(), orderedPapers(expected).map(p => p.id), query);
     assert.equal(s.$('.empty-state').hidden, true);
   }
 });
@@ -699,4 +713,33 @@ test("figure dialogs preserve modified image links and keep the search shortcut 
   s.$('.figure-close').dispatchEvent(new s.w.KeyboardEvent('keydown', { key: '/', bubbles: true, cancelable: true }));
   assert.equal(s.scrolls.length, before);
   assert.equal(s.d.activeElement, s.$('.figure-close'));
+});
+
+test("Selected defaults to first-release chronology and All publications defaults to accepted work", t => {
+  const s = setup(t);
+  assert.equal(s.$('#paper-sort').value, 'newest');
+  s.click('.show-all-papers');
+  assert.deepEqual(s.ids(), ['paper-1', 'paper-2', 'paper-3', 'paper-4', 'paper-5', 'paper-6', 'paper-7', 'paper-8', 'paper-9']);
+  s.click('[data-collection="all"]');
+  assert.equal(s.$('#paper-sort').value, 'accepted');
+  s.click('.show-all-papers');
+  const all = s.ids().map(id => data.find(p => p.id === id));
+  const firstPreprint = all.findIndex(p => p.track === 'preprint');
+  assert.ok(firstPreprint > 0);
+  assert.ok(all.slice(0, firstPreprint).every(p => p.track !== 'preprint'));
+  assert.ok(all.slice(firstPreprint).every(p => p.track === 'preprint'));
+  assert.deepEqual(all.slice(0, 6).map(p => p.id), ['paper-14', 'paper-15', 'paper-16', 'paper-18', 'paper-3', 'paper-4']);
+  s.sort('oldest');
+  s.click('[data-collection="selected"]');
+  assert.equal(s.$('#paper-sort').value, 'newest');
+  s.click('[data-collection="all"]');
+  assert.equal(s.$('#paper-sort').value, 'oldest', 'Manual choices are remembered per collection');
+  s.click('.reset-filters');
+  assert.equal(s.$('#paper-sort').value, 'accepted');
+  s.click('.hero-buttons [data-selected-link]');
+  assert.equal(s.$('#paper-sort').value, 'newest');
+  s.search('Zichen Ding');
+  assert.equal(s.$('#paper-sort').value, 'accepted', 'A global search uses the full bibliography order');
+  s.search('');
+  assert.equal(s.$('#paper-sort').value, 'newest', 'Clearing search restores selected work order');
 });
