@@ -78,6 +78,13 @@
   });
 
   // The hero is an illustrative state machine, not a recording of a live agent.
+  const demo = $("#agent-loop");
+  const openLinkedDemo = () => {
+    if (location.hash === "#agent-loop") demo.open = true;
+  };
+  $(".mast-illustration").addEventListener("click", () => { demo.open = true; });
+  window.addEventListener("hashchange", openLinkedDemo);
+  openLinkedDemo();
   const visual = $(".agent-visual");
   const loopSteps = $$(".loop-step");
   const playButton = $(".loop-play");
@@ -115,7 +122,7 @@
   };
   const scheduleDemo = () => {
     clearInterval(timer);
-    if (!paused && demoVisible && !document.hidden)
+    if (!paused && demo.open && demoVisible && !document.hidden)
       timer = setInterval(() => setStage((stage + 1) % 3), 4000);
   };
   const syncPlayButton = () => {
@@ -145,6 +152,7 @@
       syncPlayButton();
     }
   });
+  demo.addEventListener("toggle", scheduleDemo);
   syncPlayButton();
 
   // One filter state drives tabs, search, sorting, topic links, and pagination.
@@ -489,7 +497,6 @@
     scholar.dataset.scholarState = "snapshot";
     const displayCitationCount = count => {
       citationTotal.textContent = formatCitations(count);
-      $$("[data-citation-total]").forEach(element => { element.textContent = formatCitations(count); });
     };
     displayCitationCount(Number(citationTotal.textContent));
     const refreshScholar = async () => {
@@ -526,7 +533,6 @@
           displayCitationCount(count);
           updatedTime.textContent = date;
           updatedTime.dateTime = date;
-          $$("[data-scholar-date]").forEach(element => { element.textContent = date; element.dateTime = date; });
           $$(".show_paper_citations").forEach((element) => {
             const count =
               data.publications?.[element.getAttribute("data")]?.num_citations;

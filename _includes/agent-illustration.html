@@ -1,0 +1,22 @@
+<svg viewBox="0 0 364 172" aria-hidden="true" fill="none">
+      <defs>
+        <pattern id="speckle" patternUnits="userSpaceOnUse" width="11" height="11"><circle cx="1.5" cy="1.5" r=".8" fill="currentColor" opacity=".32"/></pattern>
+        <radialGradient id="dots-fade"><stop offset=".4" stop-color="white"/><stop offset="1" stop-color="black"/></radialGradient>
+        <mask id="dots-mask"><ellipse cx="183" cy="90" rx="175" ry="81" fill="url(#dots-fade)"/></mask>
+        <linearGradient id="sheet-top" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="var(--sheet-a)"/><stop offset="1" stop-color="var(--sheet-b)"/></linearGradient>
+      </defs>
+      <rect x="0" y="0" width="364" height="172" fill="url(#speckle)" mask="url(#dots-mask)"/>
+      <g stroke-linejoin="round">
+        <path d="M76 107 177 66 272 105 172 146Z" fill="var(--sheet-b)" stroke="var(--edge)" opacity=".48"/>
+        <path d="M76 98 177 57 272 96 172 137Z" fill="var(--sheet-a)" stroke="var(--edge)" opacity=".7"/>
+        <g class="glass-plane">
+          <path d="M76 85 177 44 272 83 172 124Z" fill="url(#sheet-top)" stroke="var(--edge)" stroke-width="1.35"/>
+          <path d="m86 89 101-41" stroke="var(--edge)" opacity=".75"/>
+          <path d="m108 86 58-24m-47 28 31-13m-18 18 42-17" stroke="var(--edge)" opacity=".62" stroke-linecap="round" stroke-width="2"/>
+          <path d="m173 91 29-12 20 8-29 12z" fill="var(--trace)" fill-opacity=".13" stroke="var(--edge)"/>
+        </g>
+        <path class="loop-trace" d="M117 113c-45 15-64 7-60-5 5-14 32-25 51-32m135-1c35-12 57-8 59 3 3 14-28 28-51 34" stroke="var(--trace)" stroke-dasharray="3 5" stroke-linecap="round"/>
+        <path d="m257 105-7 7 10 1" stroke="var(--trace)" stroke-linecap="round"/>
+        <g class="cursor-craft" stroke-linejoin="round"><path d="m189 53 11 33 6-12 13 10 5-7-14-9 13-3z" fill="var(--trace-shadow)" transform="translate(0 3)"/><path d="m189 53 11 33 6-12 13 10 5-7-14-9 13-3z" fill="var(--trace)" stroke="var(--sheet-a)" stroke-width="1.6"/></g>
+      </g>
+    </svg>

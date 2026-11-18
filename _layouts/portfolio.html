@@ -39,15 +39,15 @@
     <div class="header-inner">
       <a class="wordmark" href="#home" aria-label="heroding77 — Zichen Ding, home">{% include brand-mark.html %}<span>heroding<span class="wordmark-number">77</span></span></a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#news">News</a>
+        <a href="#home">Overview</a><a href="#publications">Publications</a><a href="#research">Research</a><a href="#news">News</a><a href="#about">About</a>
       </nav>
       <div class="header-actions">
         <button class="icon-button theme-toggle" aria-label="Switch to dark theme" title="Toggle color theme"><svg class="icon theme-moon"><use href="#i-moon"/></svg><svg class="icon theme-sun"><use href="#i-sun"/></svg></button>
-        <a class="header-contact" href="#contact">Let’s talk <svg class="icon"><use href="#i-external"/></svg></a>
+        <a class="header-contact" href="#contact">Contact <svg class="icon"><use href="#i-external"/></svg></a>
         <button class="icon-button menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><svg class="icon"><use href="#i-menu"/></svg></button>
       </div>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#news">News</a><a href="#contact">Contact</a></nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#home">Overview</a><a href="#publications">Publications</a><a href="#research">Research</a><a href="#news">News</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
   <footer class="site-footer container"><a class="wordmark" href="#home" aria-label="heroding77, back to home">{% include brand-mark.html %}<span>heroding<span class="wordmark-number">77</span></span></a><p>© {{ site.time | date: '%Y' }} Zichen Ding <span>·</span> Built with curiosity.</p><a href="#home">Back to top ↑</a></footer>

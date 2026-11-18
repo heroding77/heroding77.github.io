@@ -383,6 +383,10 @@ test("reduced motion and unavailable observers do not disable filtering or hide 
 
 test("agent autoplay advances, pauses on selection, and honors a new reduced-motion preference", (t) => {
   const s = setup(t);
+  assert.equal(s.intervals.size, 0);
+  s.click(".mast-illustration");
+  assert.equal(s.$("#agent-loop").open, true);
+  s.$("#agent-loop").dispatchEvent(new s.w.Event("toggle"));
   assert.equal(s.intervals.size, 1);
   [...s.intervals.values()][0]();
   assert.equal(s.$("#demo-method").textContent, "reason");
@@ -462,8 +466,6 @@ test("Scholar keeps the dated snapshot offline and falls back from CDN to the or
   });
   await flush();
   assert.equal(s.$("#total_cit").textContent, "3,000");
-  assert.equal(s.$("[data-citation-total]").textContent, "3,000");
-  assert.equal(s.$("[data-scholar-date]").dateTime, "2026-10-20");
   assert.equal(s.$("#scholar-updated").dateTime, "2026-10-20");
   assert.match(s.requests[0], /cdn\.jsdelivr\.net/);
   assert.match(s.requests[1], /raw\.githubusercontent\.com/);
@@ -608,9 +610,9 @@ test("the resume overview reflects source contributions and restores selected wo
   const selected = data.filter(p => p.selected);
   assert.equal(selected.filter(p => p.contribution === 'Co-first author').length, 6);
   assert.equal(selected.filter(p => p.contribution === 'Corresponding author').length, 3);
-  assert.equal(s.$('[data-selected-link] strong')?.textContent || s.$('.hero-evidence strong').textContent, '9');
+  assert.equal(s.$('[data-selected-link] strong').textContent, selected.length + ' selected papers');
   s.search('not-a-paper');
-  s.click('.hero-buttons [data-selected-link]');
+  s.click('[data-selected-link]');
   assert.equal(s.$('#paper-search').value, '');
   assert.deepEqual(s.ids(), orderedPapers(selected, "newest").slice(0, 6).map(p => p.id));
   assert.equal(s.$('.paper-tab.active').dataset.collection, 'selected');
@@ -623,7 +625,7 @@ test("repeated filtering does not multiply the selected-work click handler", t =
   const append = list.append;
   let appended = 0;
   list.append = function (...nodes) { appended += nodes.length; return append.apply(this, nodes); };
-  s.click('.hero-buttons [data-selected-link]');
+  s.click('[data-selected-link]');
   assert.equal(appended, data.filter(p => p.selected).length, 'One click performs one bibliography render');
 });
 
@@ -650,7 +652,7 @@ test("RSI research blog filters and searches independently of the academic bibli
   assert.equal(s.$('.figure-paper-link').href, 'https://naive.ai/en/research/');
   assert.equal(s.$('.figure-paper-link').textContent, 'Read the blog ↗');
   s.click('.figure-close');
-  s.click('.hero-buttons [data-selected-link]');
+  s.click('[data-selected-link]');
   assert.equal(blog.hidden, true);
   s.$('#paper-5 .paper-image').click();
   assert.equal(s.$('.figure-paper-link').textContent, 'Read the paper ↗');
@@ -736,7 +738,7 @@ test("Selected defaults to first-release chronology and All publications default
   assert.equal(s.$('#paper-sort').value, 'oldest', 'Manual choices are remembered per collection');
   s.click('.reset-filters');
   assert.equal(s.$('#paper-sort').value, 'accepted');
-  s.click('.hero-buttons [data-selected-link]');
+  s.click('[data-selected-link]');
   assert.equal(s.$('#paper-sort').value, 'newest');
   s.search('Zichen Ding');
   assert.equal(s.$('#paper-sort').value, 'accepted', 'A global search uses the full bibliography order');
