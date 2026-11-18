@@ -745,3 +745,27 @@ test("Selected defaults to first-release chronology and All publications default
   s.search('');
   assert.equal(s.$('#paper-sort').value, 'newest', 'Clearing search restores selected work order');
 });
+
+test('topic disclosure follows a research shortcut and can reopen the topic list', t => {
+  const s = setup(t);
+  const panel = s.$('#topic-panel');
+  const toggle = s.$('.filter-switch');
+  assert.equal(panel.hidden, true);
+  s.click('[data-research="science"]');
+  assert.equal(toggle.textContent.trim(), 'RSI');
+  s.click('.filter-switch');
+  assert.equal(panel.hidden, false);
+  assert.equal(toggle.getAttribute('aria-expanded'), 'true');
+  s.click('[data-topic="all"]');
+  assert.equal(toggle.textContent.trim(), 'Topics');
+  s.click('.filter-switch');
+  assert.equal(panel.hidden, true);
+});
+
+test('choosing the same featured paper restores it after a search', t => {
+  const s = setup(t, { hash: '#paper-5' });
+  s.search('no such paper');
+  assert.ok(s.$('#paper-5').hidden);
+  s.click('.work-picks a[href="#paper-5"]');
+  assert.equal(s.$('#paper-5').hidden, false);
+});

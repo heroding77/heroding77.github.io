@@ -162,6 +162,13 @@
   const blogSearchIndex = new Map(researchBlogs.map(blog => [blog, blog.textContent.toLocaleLowerCase()]));
   const search = $("#paper-search");
   const sort = $("#paper-sort");
+  const topicPanel = $("#topic-panel");
+  const topicToggle = $(".filter-switch");
+  const topicLabel = $("span", topicToggle);
+  topicToggle.addEventListener("click", () => {
+    topicPanel.hidden = !topicPanel.hidden;
+    topicToggle.setAttribute("aria-expanded", String(!topicPanel.hidden));
+  });
   const moreButton = $(".load-papers");
   const showAllButton = $(".show-all-papers");
   let collection = "selected";
@@ -238,6 +245,7 @@
     });
     $$(".topic-chip").forEach((button) => {
       const active = button.dataset.topic === topic;
+      if (active) topicLabel.textContent = topic === "all" ? "Topics" : button.textContent;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
     });
@@ -359,6 +367,9 @@
     filterPapers();
     paper.scrollIntoView({ behavior: "auto", block: "start" });
   };
+  $$(".work-picks a").forEach(link => link.addEventListener("click", event => {
+    if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && link.hash === location.hash) revealLinkedPaper();
+  }));
   window.addEventListener("hashchange", revealLinkedPaper);
   revealLinkedPaper();
 
